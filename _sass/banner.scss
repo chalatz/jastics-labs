@@ -1,0 +1,19 @@
+.banner {
+    background-color: #cbcbcb;
+    background-image: url(/assets/img/site/banner-bg.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+
+        background-color: #cbcbcb;
+        width: $page_width;
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 40px 0;
+
+    }
+
+}

@@ -1,20 +1,12 @@
-@font-face {
-    font-family: "Gotham Pro";
-    src: url("fonts/GothamPro-regular.woff") format("woff"),
-      url("fonts/GothamPro-regular.ttf") format("ttf");
-}
-@font-face {
-    font-family: "Gotham Pro";
-    src: url("fonts/GothamPro-Bold.woff") format("woff"),
-      url("fonts/GothamPro-Bold.ttf") format("ttf");
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-@font-face {
-    font-family: "Montserrat";
-    src: url("fonts/Montserrat-Regular.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Playfair Display";
-    src: url("fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gotham Pro', sans-serif;
 }

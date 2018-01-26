@@ -1,7 +1,12 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<p style="font-family: 'Montserrat'">
-  Gotham Pro
-</p>
+    {% include head.html %}
+
+    <body class="site-body">
+
+        {% include banner.html %}
+
+    </body>
+
+</html>
