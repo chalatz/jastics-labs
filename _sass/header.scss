@@ -2,4 +2,8 @@
 
     @include clearfix;
 
+    &__links {
+        float: right;
+    }
+
 }

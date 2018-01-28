@@ -1,5 +1,17 @@
 .site-nav {
 
-    float: right;
+    display: inline-block;
+
+    &__icon {
+        fill: #fff;
+        width: 45px;
+        height: 35px;
+        cursor: pointer;
+        &:hover {
+            
+                fill: $lightblue;
+            
+        }
+    }
 
 }
