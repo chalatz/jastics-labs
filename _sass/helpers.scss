@@ -1,0 +1,20 @@
+img {
+    max-width: 100%;
+}
+
+.line {
+    width: 124px;
+    height: 10px;
+
+    &--banner {
+        margin: 50px 0;
+    }
+
+    &--white {
+        background-color: #fff;
+    }
+    &--lightblue {
+        background-color: $lightblue;
+    }
+
+}
