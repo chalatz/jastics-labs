@@ -1,5 +1,4 @@
 .banner {
-    background-color: #cbcbcb;
     background-image: url(/assets/img/site/banner-bg.png);
     height: 100%;
     background-position: center;
@@ -8,7 +7,7 @@
 
     &__container {
 
-        background-color: #cbcbcb;
+        outline: 1px solid #cbcbcb;
         width: $page_width;
         max-width: $max-width;
         margin: 0 auto;
