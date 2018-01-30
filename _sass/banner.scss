@@ -1,5 +1,4 @@
 .banner {
-    background-color: #cbcbcb;
     background-image: url(/assets/img/site/banner-bg.png);
     height: 100%;
     background-position: center;
@@ -8,12 +7,19 @@
 
     &__container {
 
-        background-color: #cbcbcb;
+        outline: 1px solid #cbcbcb;
         width: $page_width;
         max-width: $max-width;
         margin: 0 auto;
         padding: 40px 0;
 
+    }
+
+    &__slogan {
+        width: 25vw;
+        font-size: 25px;
+        color: #fff;
+        line-height: 1.5em;
     }
 
 }

@@ -6,13 +6,35 @@
 
             <div class="site-header__links">
         
-                {% include hire-us-btn.html %}
+                <a href="" class="hire-us-btn">
+                    <span class="hire-us-btn__text">
+                        Hire Us
+                    </span>
+                </a>
 
-                {% include menu.html %}
+                <nav class="site-nav">
+
+                    <div class="site-nav__icon site-nav__icon--open-menu">
+                        {% include svg/menu.svg %}
+                    </div>
+                
+                </nav>
 
             </div>
 
         </header>
+
+        <a href="{{'/' | relative_url}}" class="banner-logo">
+
+            <img class="banner-logo__img" src="{{ '/assets/img/site/logo-large.png' | relative_url }}" alt="Jastics Labs logo">
+
+        </a>
+
+        <div class="line line--banner line--white"></div>
+
+        <p class="banner__slogan">
+            We're a team of software engineers, data experts & thinkers, who craft digital experience.
+        </p>
 
 
     </div>

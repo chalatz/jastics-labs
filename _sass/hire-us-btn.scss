@@ -1,6 +1,37 @@
 .hire-us-btn {
 
+    $padding-top: 12px;
+
+    margin-right: 40px;
     display: inline-block;
     text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: $padding-top 24px;
+    border-top-left-radius: 25% 100%;
+    border-bottom-left-radius: 25% 100%;
+    border-top-right-radius: 25% 100%;
+    border-bottom-right-radius: 25% 100%;
+    position: relative;
+    bottom: $padding-top;
+
+    -webkit-transition: all .15s linear;
+            transition: all .15s linear;
+
+    &__text {
+        font-size: 15px;
+        font-family: 'Gotham Pro', serif;
+        color: #fff;
+        letter-spacing: 6px;
+        -webkit-transition: all .15s linear;
+                transition: all .15s linear;
+    }
+
+    &:hover {
+        background-color: #fff;
+        .hire-us-btn__text {
+            color: $black;
+        }
+    }    
 
 }
