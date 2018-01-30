@@ -1,0 +1,16 @@
+.scroll-down-icon {
+    
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    transition: all .4s ease-in-out;
+    &__arrow {
+        transform-origin: 50% 50%;
+        transition: all .4s ease-in-out;
+    }
+    &:hover {            
+        .scroll-down-icon__arrow {
+            transform: translateY(3px);        
+        }           
+    }
+}

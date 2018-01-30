@@ -23,4 +23,22 @@
         line-height: 1.5em;
     }
 
+    &__socials-wrapper {
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+    }
+
+    &__socials {
+        width: $page_width;
+        max-width: $max-width;
+        margin: 0 auto;
+        
+        @include clearfix;
+    }
+
+    &__social-icons {
+        float: right;
+    }
+
 }

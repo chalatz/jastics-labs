@@ -25,4 +25,14 @@ img {
     bottom: 60px;
     left: 50%;
     transform: translateX(-50%);
+    width: 46px;
+    height: 46px;
+    &:hover {
+        .scroll-down-icon {
+            stroke: $lightblue;
+        }
+        .scroll-down-icon__arrow {
+            transform: translateY(3px);
+        }
+    }
 }
