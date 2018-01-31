@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Gotham Pro";
-    src: url("fonts/GothamPro regular.woff") format("woff"),
-        url("fonts/GothamPro regular.ttf") format("truetype");
+    src: url("fonts/GothamPro-regular.woff") format("woff"),
+        url("fonts/GothamPro-regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Gotham Pro";
@@ -21,6 +21,8 @@
 
 $max_width: 1130px;
 $page_width: 78.47222222%;
+
+$banner_bottom: 5vh;
 
 $darkblue: #272a47;
 $lightblue: #47b2f4;

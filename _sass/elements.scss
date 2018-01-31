@@ -1,0 +1,32 @@
+.line {
+    width: 124px;
+    height: 10px;
+
+    &--banner {
+        margin: 50px 0;
+    }
+
+    &--white {
+        background-color: #fff;
+    }
+    &--lightblue {
+        background-color: $lightblue;
+    }
+
+}
+
+.go-to-next {
+    color: #fff;
+    position: absolute;
+    bottom: $banner_bottom;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 46px;
+    z-index: 99;
+    &:hover {
+        .scroll-down-icon {
+            stroke: $lightblue;
+        }
+    }
+}
