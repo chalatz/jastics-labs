@@ -3,22 +3,25 @@
     fill: none;
     stroke: #fff;
     stroke-miterlimit: 10;
+    transition: stroke .2s linear;
 
-}
-
-.open-menu-icon {
-    width: 45px;
-    height: 35px;
-}
-
-.icon-upwork {
-    width: 47px;
-    height: 32px;
 }
 
 .social-icon {
+
     fill: #fff;
+    transition: fill .2s linear;
     &:hover {
         fill: $lightblue;
     }
+
+    &--banner {
+        margin-left: 42px;
+    }
+
+    &--banner-upwork {
+        position: relative;
+        bottom: -10px;
+    }
+
 }

@@ -15,16 +15,14 @@
     position: relative;
     bottom: $padding-top;
 
-    // -webkit-transition: all .15s linear;
-            // transition: all .15s linear;
+    -webkit-transition: background-color .2s linear;
+            transition: background-color .2s linear;
 
     &__text {
         font-size: 15px;
         font-family: 'Gotham Pro', serif;
         color: #fff;
         letter-spacing: 6px;
-        // -webkit-transition: all .15s linear;
-                // transition: all .15s linear;
     }
 
     &:hover {

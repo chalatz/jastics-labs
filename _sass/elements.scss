@@ -24,6 +24,7 @@
     width: 46px;
     height: 46px;
     z-index: 99;
+    transition: stroke .2s linear;
     &:hover {
         .scroll-down-icon {
             stroke: $lightblue;

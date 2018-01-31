@@ -4,9 +4,10 @@
 
     &__icon {
         fill: #fff;
-        width: 45px;
-        height: 35px;
         cursor: pointer;
+
+        transition: fill .2s linear;
+
         &:hover {            
             fill: $lightblue;            
         }
