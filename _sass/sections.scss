@@ -1,0 +1,15 @@
+.section {
+    padding-top: 80px;
+
+    &__title {
+        margin: 47px 0 35px 0;
+        color: $darkblue;
+        font-size: 50px;
+    }
+
+    &__subtitle {
+        color: $lightgray;
+        font-size: 25px;
+    }
+
+}

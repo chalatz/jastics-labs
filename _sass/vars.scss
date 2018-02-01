@@ -36,6 +36,9 @@ $banner_bottom: 5vh;
 $darkblue: #272a47;
 $lightblue: #47b2f4;
 $black: #2a2a2a;
+$basegray: #eaeaea;
+$lightgray: darken($basegray, 10%);
+$darkgray: darken($basegray, 20%);
 
 @mixin clearfix {
     &:after {

@@ -24,6 +24,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
+
+# Social links
+linkedin_url: https://www.linkedin.com/company/11286826/
+twitter_url: https://twitter.com/jastics
+upwork_url:  https://www.upwork.com/agencies/~013609ed8111b7920c
+instagram_url: https://www.instagram.com/jasticslabs/
+
 # Build settings
 markdown: kramdown
 # theme: minima
