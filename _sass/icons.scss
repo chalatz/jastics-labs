@@ -5,6 +5,10 @@
     stroke-miterlimit: 10;
     transition: stroke .2s linear;
 
+    .section & {
+        stroke: $darkblue;
+    }
+
 }
 
 .open-menu-icon {
@@ -67,9 +71,48 @@
 
 }
 
+@mixin what_we_do_svg($times){
+    svg {
+        &.dedicated-develpoment-team {
+            width: 80px * $times;
+            height: 81px * $times;
+        }
+        &.software-product-development {
+            width: 88px * $times;
+            height: 75px * $times;
+        }
+        &.mobile-application-development {
+            width: 63px * $times;
+            height: 77px * $times;
+        }
+        &.software-qa-and-testing {
+            width: 85px * $times;
+            height: 77px * $times;
+        }
+        &.technical-consulting {
+            width: 90px * $times;
+            height: 74px 8 $times;
+        }
+        &.technical-support {
+            width: 75px * $times;
+            height: 80px * $times;
+        }
+    }
+}
+
+@include what_we_do_svg(1.8);
+
+@include breakpoint(large) {
+    @include what_we_do_svg(1.5);
+}
+
+.what-we-do__icon {
+    fill: $darkblue;
+}
+
 .software-product-development-icon {
     fill: none;
-    stroke: #000;
+    stroke: $darkblue;
     stroke-width: 1.5;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -77,7 +120,7 @@
 }
 
 .how-we-work__icon {
-    stroke: #000;
+    stroke: $darkblue;
     stroke-width: 2;
     stroke-miterlimit: 10;
 }

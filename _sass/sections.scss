@@ -1,9 +1,17 @@
 .section {
+
     padding-top: 80px;
+
+    &__header {
+        margin: 47px 0 80px 0;
+        @include breakpoint(medium) {
+            margin-bottom: 50px;
+        }
+    }
 
     &__title {
         font-family: 'Gotham Pro', sans-serif;
-        margin: 47px 0 35px 0;
+        margin: 0 0 35px 0;
         color: $darkblue;
         font-size: 50px;
     }
@@ -14,21 +22,43 @@
     }
 
     &__content {
-        width: 88%;
-        margin: 0 auto;
+        width: 95%;
     }
 
 }
 
 .what-we-do {
 
+    &__icons {
+        text-align: center;
+    }
+
     &__icon {
-
-        background-color: green;
-
         display: inline-block;
         width: 30%;
+        text-align: center;
+        margin-bottom: 80px;
+        padding: 0 12px;
 
+        @include breakpoint(large) {
+            margin-bottom: 55px;
+        }
+        @include breakpoint(medium) {
+            width: 45%;
+            margin-bottom: 50px;
+        }
+        @include breakpoint(small) {
+            width: 70%;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &__desc {
+        font-size: 20px;
+        color: $darkgray;
+        line-height: 1.8;
+        padding: 0 12px;
     }
 
 }
