@@ -13,4 +13,22 @@
         font-size: 25px;
     }
 
+    &__content {
+        width: 88%;
+        margin: 0 auto;
+    }
+
+}
+
+.what-we-do {
+
+    &__icon {
+
+        background-color: green;
+
+        display: inline-block;
+        width: 30%;
+
+    }
+
 }
