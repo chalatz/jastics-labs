@@ -8,12 +8,8 @@
     position: relative;
 
     &__container {
-
-        width: $page_width;
-        max-width: $max-width;
         margin: 0 auto;
         padding: 40px 0;
-
     }
 
     &__slogan {
@@ -21,12 +17,24 @@
         font-size: 25px;
         color: #fff;
         line-height: 1.5em;
+
+        @include breakpoint(medium) {
+            width: 75%;
+        }
+
     }
 
     &__socials-wrapper {
         position: absolute;
         bottom: $banner_bottom;
         width: 100%;
+
+        @include breakpoint(medium) {
+            width: 50px;
+            right: 5vw;
+            bottom: 2vh;
+        }
+
     }
 
     &__socials {
@@ -35,6 +43,11 @@
         margin: 0 auto;
         
         @include clearfix;
+
+        @include breakpoint(large) {
+            width: 90%;
+        }
+
     }
 
     &__social-icons {

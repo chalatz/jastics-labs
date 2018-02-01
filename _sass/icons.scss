@@ -47,6 +47,17 @@
 
     &--banner {
         margin-left: 42px;
+
+        @include breakpoint(large) {
+            margin-left: 24px; 
+        }
+
+        @include breakpoint(medium) {
+            display: block;
+            text-align: center;
+            margin: 16px 0 0 0;
+        }
+
     }
 
     &--banner-upwork {

@@ -16,6 +16,7 @@
 }
 
 .go-to-next {
+
     color: #fff;
     position: absolute;
     bottom: $banner_bottom;
@@ -30,4 +31,9 @@
             stroke: $lightblue;
         }
     }
+
+    @include breakpoint(medium) {
+        bottom: 2vh;
+    }
+
 }

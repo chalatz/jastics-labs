@@ -3,4 +3,8 @@
     display: inline-block;
     margin-top: 25vh;
 
+    @include breakpoint(medium) {
+        margin-top: 6vh;
+    }
+
 }

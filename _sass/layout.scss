@@ -3,6 +3,17 @@ body {
     height: 100%;
 }
 
+.container {
+    width: $page_width;
+    max-width: $max-width;
+    @include breakpoint(large) {
+        width: 90%;
+    }
+    @include breakpoint(medium) {
+        width: 95%;
+    }
+}
+
 .main-wrapper {
     width: 80%;
     margin: 0 auto;
