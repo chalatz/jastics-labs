@@ -100,6 +100,19 @@
     }
 }
 
+@mixin how_we_work_svg($times) {
+    svg {
+        &.full-cycle-solutions {
+            width: 79px * $times;
+            height: 71px * $times;
+        }
+        &.project-based {
+            width: 73px * $times;
+            height: 73px * $times;
+        }
+    }
+}
+
 @include what_we_do_svg(1.8);
 
 @include breakpoint(large) {
@@ -108,6 +121,10 @@
 
 .what-we-do__icon {
     fill: $darkblue;
+}
+
+.how-we-work__item-icon {
+    @include how_we_work_svg(1.8);
 }
 
 .software-product-development-icon {

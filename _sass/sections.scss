@@ -62,3 +62,41 @@
     }
 
 }
+
+.how-we-work {
+
+    &__content {
+        border: 2px solid $lightergray;
+        border-radius: 12px;
+        @include clearfix;
+    }
+
+    &__item {
+        padding: 50px 20px;
+        float: left;
+        width: 50%;
+        text-align: center;
+        &:hover {
+            background-color: $lightergray;
+        }
+    }
+
+    &__info {
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__item-title {
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 30px;
+        color: $darkblue;
+        margin: 40px 0;
+    }
+
+    &__item-desc {
+        font-size: 20px;
+        color: $darkblue;
+        line-height: 1.8;
+    }
+
+}
