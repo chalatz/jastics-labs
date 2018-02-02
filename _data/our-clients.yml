@@ -1,0 +1,17 @@
+# images are inside assets/img/clients folder
+
+# Name field is optional, good for SEO and a11y though
+
+items:
+
+  - name: Hybrid
+    image: hybrid.png
+
+  - name: Foodrazor
+    image: foodrazor.png
+
+  - name: Upwork
+    image: upwork.png
+
+  - name: Pick Me
+    image: pick-me.png

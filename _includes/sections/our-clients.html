@@ -1,0 +1,39 @@
+<section class="section our-clients container full-page">
+
+    <div class="line line--section line--lightblue" id="our-clients"></div>
+
+    <header class="section__header">
+
+        <h2 class="section__title">
+            Our Clients
+        </h2>
+
+        <p class="section__subtitle">
+            Testimonials
+        </p>
+        
+    </header>
+
+    <div class="section__content">
+
+        <div class="our-clients__content">
+
+            {% for item in site.data.our-clients.items %}
+                
+                
+
+                    <img class="our-clients__item-img" src="{{ '/assets/img/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
+    
+                
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <a href="#hire-us" class="go-to-next go-to-next--section">
+        {% include svg/icon.html id='scroll-down-icon' %}
+    </a>
+
+</section>
