@@ -27,7 +27,7 @@
         @media (max-width: 768px) { @content ; }
      }
     @else if $point == small {
-        @media (max-width: 420px) { @content ; }
+        @media (max-width: 460px) { @content ; }
      }
  }
 

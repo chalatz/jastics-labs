@@ -20,11 +20,11 @@
 
             {% for item in site.data.our-clients.items %}
                 
-                
+                <div class="our-clients__item">
 
                     <img class="our-clients__item-img" src="{{ '/assets/img/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
     
-                
+                </div>
 
             {% endfor %}
 

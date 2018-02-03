@@ -33,6 +33,7 @@
 
     &__content {
         margin-bottom: 20px;
+        padding-bottom: 60px;;
     }
 
     &__icons {
@@ -93,6 +94,8 @@
 
     &__item {
         padding-top: 50px;
+        padding-left: 12px;
+        prefix: 12px;
         float: left;
         width: 50%;
         text-align: center;
@@ -102,7 +105,10 @@
             background-color: $lightergray;
         }
         @include breakpoint(medium) {
+            display: block;
             width: 100%;
+            margin-bottom: 0;
+            padding-bottom: 12px;;
         }
     }
 
