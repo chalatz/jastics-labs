@@ -25,6 +25,12 @@
         width: 95%;
         margin-right: auto;
         margin-left: auto;
+
+        &--our-clients {
+            width: 100%;
+            margin: 0;            
+        }
+
     }
 
 }
@@ -139,10 +145,33 @@
 
 .our-clients {
 
-    &__feedback-item {
+    &__feedback {
+        width: 90%;
+    }
 
-        border: 3px solid $lightergray;
-        padding: 80px 5% 80px 10%; 
+    &__feedback-item {
+        border: 2px solid $lightergray;
+        padding: 80px 5% 80px 15%; 
+    }
+
+    &__feedback-item-title {
+        font-family: 'Gotham Pro', sans-serif;
+        color: $darkblue;
+        font-size: 30px;
+    }
+
+    &__feedback-item-text {
+        color: $darkergray;
+        font-size: 20px;
+        line-height: 1.8;
+        position: relative;
+    }
+
+    &__feedback-item-quote {
+        position: absolute;
+        top: 0;
+        left: -70px;
+        left: calc(-55px - 3vw);
 
     }
 
