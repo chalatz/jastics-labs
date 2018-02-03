@@ -18,15 +18,35 @@
 
         <div class="our-clients__content">
 
-            {% for item in site.data.our-clients.items %}
+            <div class="our-clients__items"></div>
+
+                {% for item in site.data.our-clients.items %}
+
+                    {% if item.name %}
+                        {% assign item_id = item.name | slugify %}
+                    {% else %}
+                        {% assign item_id = item.image | slugify %}
+                    {% endif %}
+                    
+                    <div class="our-clients__item" id="{{ item_id }}">
+
+                        <img class="our-clients__item-img" src="{{ '/assets/img/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
+        
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="our-clients__feedback">
+            
+                <div class="our-clients__feedback-item">
                 
-                <div class="our-clients__item">
+                    
 
-                    <img class="our-clients__item-img" src="{{ '/assets/img/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
-    
                 </div>
-
-            {% endfor %}
+            
+            </div>
 
         </div>
 
