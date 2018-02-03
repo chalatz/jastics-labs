@@ -1,11 +1,10 @@
 # images are inside assets/img/clients folder
 
-# Name field is optional, good for SEO and a11y though
-
 items:
 
-  - name: Hybrid
+  - name: Hybrid Software & Electronics Co
     image: hybrid.png
+    feedback: We are very pleased to work with Justics Labs. <br>Very professional and experienced team. Thank you!
 
   - name: Foodrazor
     image: foodrazor.png
@@ -15,3 +14,5 @@ items:
 
   - name: Pick Me
     image: pick-me.png
+    feedback: Our growing business required urgent backend expertise to scale our existing tech stack. <br>Jastics Labs helped us put together Apache Kafka and helped us understand the best practices of using Kafka.
+                    

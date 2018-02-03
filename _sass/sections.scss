@@ -145,13 +145,25 @@
 
 .our-clients {
 
+    &__item {
+        
+        &--active {
+            display: inherit;
+        }
+    }
+
     &__feedback {
         width: 90%;
     }
 
     &__feedback-item {
         border: 2px solid $lightergray;
-        padding: 80px 5% 80px 15%; 
+        padding: 80px 5% 80px 15%;
+        display: none;
+        
+        &--active {
+            display: block;
+        }
     }
 
     &__feedback-item-title {

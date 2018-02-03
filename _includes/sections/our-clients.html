@@ -20,7 +20,7 @@
 
             {% for item in site.data.our-clients.items %}
                 
-                <div class="our-clients__item" id="{{ item.name | slugify }}-client">
+                <div class="our-clients__item {% if forloop.index == 1 %}our-clients__item--active{% endif %}" data-client="{{ item.name | slugify }}-client">
 
                     <img class="our-clients__item-img" src="{{ '/assets/img/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
     
@@ -32,22 +32,29 @@
 
         <div class="our-clients__feedback">
 
-            <div class="our-clients__feedback-item">
+            {% for item in site.data.our-clients.items %}
+                
+                <div id="{{ item.name | slugify }}-client" class="our-clients__feedback-item {% if forloop.index == 1 %}our-clients__feedback-item--active{% endif %}">
 
-                <h3 class="our-clients__feedback-item-title">
-                    Hybrid Software & Electronics Co
-                </h3>
+                    <div class="our-clients__feedback-item-content">
 
-                <p class="our-clients__feedback-item-text">
-                    <span class="our-clients__feedback-item-quote">
-                        {% include svg/icon.html id='quotes-right' %}
-                    </span>
+                        <h3 class="our-clients__feedback-item-title">
+                            {{ item.name }}
+                        </h3>
+        
+                        <p class="our-clients__feedback-item-text">
+                            <span class="our-clients__feedback-item-quote">
+                                {% include svg/icon.html id='quotes-right' %}
+                            </span>
+        
+                            {{ item.feedback }}
+                        </p>
 
-                    We are very pleased to work with Justics Labs.<br>
-                    Very professional and experienced team. Thank you!
-                </p>
+                    </div>
+    
+                </div>
 
-            </div>
+            {% endfor %}
 
         </div>
 
