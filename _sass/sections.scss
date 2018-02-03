@@ -28,7 +28,8 @@
 
         &--our-clients {
             width: 100%;
-            margin: 0;            
+            margin: 0;
+            padding-bottom: 60px;            
         }
 
     }
@@ -184,6 +185,10 @@
         top: 0;
         left: -70px;
         left: calc(-55px - 3vw);
+
+        @include breakpoint(medium) {
+            position: static;
+        }
 
     }
 
