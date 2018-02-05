@@ -74,27 +74,27 @@
 @mixin what_we_do_svg($times){
     svg {
         &.dedicated-develpoment-team {
-            width: 80px * $times;
-            height: 81px * $times;
+            width: 95px * $times;
+            height: 80px * $times;
         }
         &.software-product-development {
-            width: 88px * $times;
-            height: 75px * $times;
+            width: 95px * $times;
+            height: 80px * $times;
         }
         &.mobile-application-development {
-            width: 63px * $times;
-            height: 77px * $times;
+            width: 95px * $times;
+            height: 80px * $times;
         }
         &.software-qa-and-testing {
-            width: 85px * $times;
-            height: 77px * $times;
+            width: 95px * $times;
+            height: 80px * $times;
         }
         &.technical-consulting {
-            width: 90px * $times;
-            height: 74px 8 $times;
+            width: 95px * $times;
+            height: 80px * $times;
         }
         &.technical-support {
-            width: 75px * $times;
+            width: 95px * $times;
             height: 80px * $times;
         }
     }
@@ -104,42 +104,33 @@
     svg {
         &.full-cycle-solutions {
             width: 79px * $times;
-            height: 71px * $times;
+            height: 80px * $times;
         }
         &.project-based {
             width: 73px * $times;
-            height: 73px * $times;
+            height: 80px * $times;
         }
     }
 }
 
-@include what_we_do_svg(1.8);
+@include what_we_do_svg(1);
 
 @include breakpoint(large) {
-    @include what_we_do_svg(1.5);
+    @include what_we_do_svg(1);
 }
 
 .what-we-do__icon {
     fill: $darkblue;
+    vertical-align: top;
+}
+
+.what-we-do__icon-svg {
+    max-width: 100%;
+    margin-bottom: 25px;
 }
 
 .how-we-work__item-icon {
-    @include how_we_work_svg(1.8);
-}
-
-.software-product-development-icon {
-    fill: none;
-    stroke: $darkblue;
-    stroke-width: 1.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-}
-
-.how-we-work__icon {
-    stroke: $darkblue;
-    stroke-width: 2;
-    stroke-miterlimit: 10;
+    @include how_we_work_svg(1);
 }
 
 svg.quotes-right {

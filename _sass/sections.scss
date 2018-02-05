@@ -68,15 +68,16 @@
 
     }
 
-    &__icon-svg {
-        height: 150px;
-    }
-
     &__desc {
         font-size: 20px;
         color: $darkgray;
         line-height: 1.8;
-        padding: 0 12px;
+        padding: 0 16px;
+
+        @include breakpoint(large) {
+            padding: 0 12px;
+        }
+
     }
 
 }
