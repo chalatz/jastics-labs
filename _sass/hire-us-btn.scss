@@ -23,6 +23,11 @@
         font-family: 'Gotham Pro', serif;
         color: #fff;
         letter-spacing: 6px;
+
+        &--send {
+            padding: 0 28px;
+        }
+
     }
 
     &:hover {
@@ -56,6 +61,14 @@
             }
         }
 
+    }
+
+    &--send {
+        @include breakpoint(small) {
+            width: 65%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
     }
 
     &--centered {

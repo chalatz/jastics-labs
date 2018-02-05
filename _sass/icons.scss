@@ -116,7 +116,7 @@
 @include what_we_do_svg(1);
 
 @include breakpoint(large) {
-    @include what_we_do_svg(1);
+    @include what_we_do_svg(.8);
 }
 
 .what-we-do__icon {

@@ -56,9 +56,9 @@
 
         @include breakpoint(large) {
             margin-bottom: 55px;
+            width: 45%;
         }
         @include breakpoint(medium) {
-            width: 50%;
             margin-bottom: 50px;
         }
         @include breakpoint(small) {
@@ -206,8 +206,18 @@
         width: 100%;
         margin-bottom: 25px;
         padding: 25px 20px 25px 35px;
-        font-family: 'Gotham Pro',  sans-serif;
-        font-size: 16px;
+        font-size: 18px;
+        color: $darkgray;
+        outline: none;
+        border-radius: 12px;
+        border: 1px solid $lightergray;
+        box-shadow: 0px 18px 29px -29px rgba(0,0,0,0.75);
+        transition: box-shadow .1s linear;
+
+        &:focus {
+            box-shadow: 0px 5px 28px -11px rgba(0, 0, 0, 0.75)
+        }
+
     }
 
 }
