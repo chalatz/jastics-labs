@@ -1,5 +1,41 @@
 .site-nav {
 
-    
+    position: relative;
+
+    &__items-wrapper {
+        text-align: center;
+        background-color: $lightblue;
+        padding-top: 90px;
+        //height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        &:before {
+            content: "";
+            background-color: $lightblue;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            z-index: -1;
+        }
+
+    }
+
+    &__items {
+        display: inline-block;
+        text-align: left;
+    }
+
+    &__item {
+        color: #fff;
+        display: block;
+        padding: 16px 0;
+        margin-bottom: 16px;
+        font-size: 18px;
+    }
+
 
 }

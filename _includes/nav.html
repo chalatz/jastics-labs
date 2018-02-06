@@ -1,0 +1,13 @@
+<div class="site-nav__items-wrapper">
+
+    <div class="site-nav__items">
+
+        {% for item in site.data.nav.items %}
+            <a href="{{ item.url | relative_url }}" class="site-nav__item">
+                {{ item.name }}
+            </a>
+        {% endfor %}
+
+    </div>
+
+</div>
