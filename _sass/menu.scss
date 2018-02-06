@@ -16,6 +16,11 @@
 
         &--close-menu {
             display: none;
+            &:hover {
+                .close-menu-icon {            
+                    stroke: $darkblue;
+                }
+            }
         }
 
     }

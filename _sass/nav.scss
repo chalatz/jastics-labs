@@ -3,25 +3,14 @@
     position: relative;
 
     &__items-wrapper {
+        display: none;
         text-align: center;
-        //background-color: $lightblue;
         padding-top: 90px;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 1;
-
-        // &:before {
-        //     content: "";
-        //     background-color: $lightblue;
-        //     width: 100%;
-        //     position: absolute;
-        //     top: 0;
-        //     left: -100%;
-        //     z-index: -1;
-        // }
-
     }
 
     &__items {
@@ -35,6 +24,10 @@
         padding: 16px 0;
         margin-bottom: 16px;
         font-size: 18px;
+        transition: color .2s linear;
+        &:hover {
+            color: $darkblue;
+        }
     }
 
 

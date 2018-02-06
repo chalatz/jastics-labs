@@ -1,10 +1,10 @@
-<section class="banner">
+<section class="banner" id="banner">
 
     <div class="banner__container container">
 
         <header class="site-header site-header--home">
 
-            <div class="site-header__links">
+            <div class="site-header__links" id="header-links" >
         
                 <a href="" class="hire-us-btn">
                     <span class="hire-us-btn__text">
@@ -14,11 +14,11 @@
 
                 <nav class="site-nav">
 
-                    <div class="site-nav__icon site-nav__icon--open-menu">
+                    <div class="site-nav__icon site-nav__icon--open-menu" id="open-menu">
                         {% include svg/icon.html id='open-menu-icon' %}
                     </div>
 
-                    <div class="site-nav__icon site-nav__icon--close-menu">
+                    <div class="site-nav__icon site-nav__icon--close-menu" id="close-menu">
                         {% include svg/icon.html id='close-menu-icon' %}
                     </div>
                 
@@ -47,7 +47,7 @@
 
     </div>
 
-    <a href="#what-we-do" class="go-to-next">
+    <a href="#what-we-do" class="go-to-next go-to-next--banner" id="banner-goto">
         {% include svg/icon.html id='scroll-down-icon' %}
     </a>
 
