@@ -30,6 +30,10 @@ $(document).ready(function(){
 
     };
 
+    var handle_nav = function(){
+        
+    };
+
     clients_slider();
 
     clients_feedback();
