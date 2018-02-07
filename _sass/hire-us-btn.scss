@@ -68,7 +68,7 @@
     &--page {
         z-index: 3;
         background-color: $lightblue;
-        border: 2px solid $lightblue;
+        border: 2px solid #fff;
         -webkit-transition: box-shadow .1s linear;
             transition: box-shadow .1s linear;
         
@@ -93,6 +93,10 @@
     &--centered {
         margin-left: 50%;
         transform: translateX(-50%);
+    }
+
+    &--white-bordered {
+        border-color: #fff;
     }
 
 }
