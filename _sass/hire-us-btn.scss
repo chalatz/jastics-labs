@@ -65,6 +65,23 @@
 
     }
 
+    &--page {
+        z-index: 3;
+        background-color: $lightblue;
+        border: 2px solid $lightblue;
+        -webkit-transition: box-shadow .1s linear;
+            transition: box-shadow .1s linear;
+        
+        &:hover {
+            box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+            background-color: $lightblue;
+            .hire-us-btn__text {
+                color: #fff;
+            }
+        }
+
+    }
+
     &--send {
         @include breakpoint(small) {
             width: 65%;

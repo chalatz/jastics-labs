@@ -5,6 +5,22 @@
     &__links {
         float: right;
         position: relative;
+
+        &--page {
+            top: 8px;
+        }
+
     }
+
+    &__logo {
+        float: left;
+    }
+
+    &--page {
+
+        padding: 40px 0;
+
+    }
+
 
 }

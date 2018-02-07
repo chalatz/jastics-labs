@@ -3,15 +3,23 @@
 
     {% include head.html %}
 
+    {% include header.html %}
+
     <body class="site-body">
 
         {% include svg/icons.svg %}
+
+        <div class="nav-wrapper" id="nav-wrapper"></div>
 
         <main class="main-wrapper">
 
             {{ content }}
 
         </main>
+
+        {% include footer.html %}
+
+        {% include scripts/footer.html %}
 
     </body>
 

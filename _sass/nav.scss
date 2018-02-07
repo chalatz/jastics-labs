@@ -2,6 +2,10 @@
 
     position: relative;
 
+    &--page {
+        z-index: 3;
+    }
+
     &__items-wrapper {
         display: none;
         text-align: center;
@@ -11,6 +15,11 @@
         left: 0;
         width: 100%;
         z-index: 1;
+
+        &--page {
+            z-index: 2 ;
+        }
+
     }
 
     &__items {
@@ -29,6 +38,5 @@
             color: $darkblue;
         }
     }
-
 
 }

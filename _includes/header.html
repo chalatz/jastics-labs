@@ -1,0 +1,31 @@
+<header class="site-header site-header--page container">
+
+    <a href="{{'/' | relative_url}}" class="site-header__logo">
+            <img class="site-header__logo-img" src="{{ '/assets/img/site/logo.png' | relative_url }}" alt="Jastics Labs logo">
+    </a>
+
+    <div class="site-header__links site-header__links--page" id="header-links" >
+        
+        <a href="" class="hire-us-btn hire-us-btn--page">
+            <span class="hire-us-btn__text">
+                Hire Us
+            </span>
+        </a>
+
+        <nav class="site-nav site-nav--page">
+
+            <div class="site-nav__icon site-nav__icon--page site-nav__icon--open-menu" id="open-menu--page">
+                {% include svg/icon.html id='open-menu-icon' %}
+            </div>
+
+            <div class="site-nav__icon site-nav__icon--close-menu" id="close-menu--page">
+                {% include svg/icon.html id='close-menu-icon' %}
+            </div>
+        
+        </nav>
+
+        {% include nav.html modifier='page' %}
+
+    </div> 
+
+</header>
