@@ -66,7 +66,7 @@ In example above, your app won't be able to store enough requests after some tim
 
 **Practical example**: We have three endpoints, and I'll continuosly send requests to them over 24 hours. If you have memory leaks, this test should show the problems.
 
-<script src="https://gist.github.com/ivanursul/712d8af0e7dc5e3c25ec7b96195d6c01.js"></script>
+{% gist 712d8af0e7dc5e3c25ec7b96195d6c01 %}
 
 Pay attention to simulation setup section:
 
