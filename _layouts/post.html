@@ -9,15 +9,32 @@ layout: default
     <header class="post__header">
 
         <h1 class="post__title">
-            title
+            {{ page.title }}
         </h1>
 
-        <section class="post__content">
-
-            {{ content }}
-
+        <section class="post__meta">
+            <time class="post__date" datetime="{{ page.date | date: '%d.%m.%Y' }}">
+                {{ page.date | date: '%d.%m.%Y' }}
+            </time>
+            <a
+                class="post__comments-count"
+                href="{{ page.url | relative_url }}#disqus_thread"
+                data-disqus-identifier='{{ page.url | absolute_url }}'
+            >
+                Comments
+            </a>
         </section>
 
     </header>
 
+    <section class="post__content">
+
+        {{ content }}
+
+    </section>
+
 </article>
+
+<a href="{{ '/blog' | relative_url }}" class="return-back">
+    <span class="return-back__arrow">&larr;</span> Back to Blog
+</a>

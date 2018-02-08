@@ -22,7 +22,8 @@ body {
 
 .main-wrapper {
     width: $page_width;
-    margin: 0 auto;
+    max-width: $max-width;
+    margin: 0 auto 80px;
 }
 
 .full-page {

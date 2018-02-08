@@ -55,7 +55,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    min-height: 490px;
+    min-height: 520px;
     width: 40vw;
     background-color: $lightblue;
     z-index: 1;
@@ -68,4 +68,16 @@
         width: 100%;
     }
 
+}
+
+.return-back {
+    color: $lightgray;
+    text-decoration: underline;
+    &:hover {
+        color: $darkgray;
+    }
+    &__arrow {
+        font-family: sans-serif;
+        font-weight: bold;
+    }
 }
