@@ -72,8 +72,8 @@
         z-index: 3;
         background-color: $lightblue;
         border: 2px solid $lightblue;
-        -webkit-transition: box-shadow .1s linear;
-            transition: box-shadow .1s linear;
+        -webkit-transition: box-shadow .1s linear, border-color .2s linear;
+            transition: box-shadow .1s linear, border-color .2s linear;
         
         &:hover {
             box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
@@ -99,10 +99,11 @@
     }
 
     &--white-bordered {
+
         border-color: #fff;
 
-        -webkit-transition: background-color .2s linear;
-        transition: background-color .2s linear;
+        -webkit-transition: background-color .2s linear, border-color .2s linear;
+        transition: background-color .2s linear, border-color .2s linear;
         
         .hire-us-btn__text {
             -webkit-transition: color .2s linear;
