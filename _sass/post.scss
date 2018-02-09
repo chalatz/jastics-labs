@@ -7,6 +7,12 @@
         font-family: 'Gotham Pro', sans-serif;
         color: $darkblue;
         margin: 60px 0 25px;
+
+        @include breakpoint(medium) {
+            margin: 5vw 0 25px;
+            font-size: 25px;
+        }
+
     }
 
     &__meta {

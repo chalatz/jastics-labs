@@ -82,12 +82,13 @@
     }
 }
 
-[data-anchorjs-icon]::after {
-    color: $darkblue;
-}
-
-a.anchorjs-link:hover {
-    &:after {
-        color: $lightblue;
+a.anchorjs-link {
+    color: $darkblue !important;
+    position: static !important;
+    margin: 0 !important;
+    &:hover {
+        &:after {
+            color: $lightblue;
+        }
     }
 }

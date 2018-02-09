@@ -24,6 +24,9 @@ body {
     width: $page_width;
     max-width: $max-width;
     margin: 0 auto 80px;
+    @include breakpoint(medium) {
+        width: 95%;
+    }
 }
 
 .full-page {

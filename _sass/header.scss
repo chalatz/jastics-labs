@@ -14,11 +14,21 @@
 
     &__logo {
         float: left;
+        @include breakpoint(small) {
+            float: none;
+            display: block;
+            text-align: left;
+            margin-bottom: 12px;
+        }
     }
 
     &--page {
 
         padding: 25px 0 75px;
+
+        @include breakpoint(medium) {
+            padding-bottom: 15vw;
+        }
 
     }
 

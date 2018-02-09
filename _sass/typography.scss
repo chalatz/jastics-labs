@@ -35,6 +35,13 @@ a {
             font-size: 18px;
             line-height: 1.5;
             margin: 28px 0;
+            @include breakpoint(medium) {
+                margin: 18px 0;
+            }
+
+            @include breakpoint(small) {
+                font-size: 16px;
+            }
         }
 
         li {
