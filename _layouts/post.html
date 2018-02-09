@@ -35,6 +35,18 @@ layout: default
 
 </article>
 
-<a href="{{ '/blog' | relative_url }}" class="return-back">
-    <span class="return-back__arrow">&larr;</span> Back to Blog
+{% if page.page_type == 'post' %}
+
+    {% assign page_type = 'Blog' %}
+    {% assign return_url = '/blog' %}
+
+{% elsif page.page_type == 'whitepaper' %}
+
+    {% assign page_type = 'Whitepapers' %}
+    {% assign return_url = '/whitepapers' %}
+
+{% endif %}
+
+<a href="{{ return_url | relative_url }}" class="return-back">
+    <span class="return-back__arrow">&larr;</span> Back to {{ page_type }}
 </a>

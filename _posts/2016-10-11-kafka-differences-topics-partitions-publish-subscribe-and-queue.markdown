@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title:  "Kafka differences: topics, partitions, publish/subscribe and queue."
 date: 2017-10-11 22:27:46
 permalink: kafka-differences-topics-partitions-publish-subscribe-and-queue

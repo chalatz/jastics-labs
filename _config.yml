@@ -40,9 +40,17 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: posts
+    values:
+      layout: post
+      page_type: post
+
+  - scope:
+      path: ""
       type: whitepapers
     values:
       layout: post
+      page_type: whitepaper
 
 # Build settings
 markdown: kramdown

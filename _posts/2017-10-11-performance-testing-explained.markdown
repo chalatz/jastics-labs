@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title:  "Do we really know our application performance behaviour ?"
 date: 2017-10-11 11:20:00
 permalink: performance-testing-explained

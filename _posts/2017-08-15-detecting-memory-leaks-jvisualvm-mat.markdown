@@ -1,5 +1,4 @@
 ---
-layout: "post"
 title:  "Detecting memory leaks using JVisualVM and Memory Analyzer Tool"
 date: 2017-08-15 10:33:00
 permalink: memory-leak

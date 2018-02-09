@@ -12,5 +12,5 @@ items:
   - name: Blog
     url: blog
 
-  - name: Whitpapers
-    url: /
+  - name: Whitepapers
+    url: whitepapers
