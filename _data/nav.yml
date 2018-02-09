@@ -10,7 +10,7 @@ items:
     url: /
 
   - name: Blog
-    url: /
+    url: blog
 
   - name: Whitpapers
     url: /

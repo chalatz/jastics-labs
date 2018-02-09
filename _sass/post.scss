@@ -3,6 +3,7 @@
     margin-bottom: 60px;
 
     &__title {
+        
         font-size: 30px;
         font-family: 'Gotham Pro', sans-serif;
         color: $darkblue;
@@ -24,6 +25,24 @@
         margin-left: 20px;
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+}
+
+.summary {
+
+    &__title {
+        font-family: 'Gotham Pro', sans-serif;
+        font-size: 25px;
+    }
+
+    &__title-link {
+        color: $darkblue;
+        -webkit-transition: color .2s linear;
+                transition: color .2s linear;
+        &:hover {
+            color: $lightblue;
         }
     }
 

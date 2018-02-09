@@ -1,0 +1,25 @@
+.page {
+
+    &__header {
+        margin: 45px 0 60px;
+    }
+
+    &__title {
+
+        font-size: 30px;
+        font-family: 'Gotham Pro', sans-serif;
+        color: $darkblue;
+
+        @include breakpoint(medium) {
+            margin: 5vw 0 25px;
+            font-size: 25px;
+        }
+
+    }
+
+    &__subtitle {
+        color: $lightgray;
+        font-size: 25px;
+    }
+
+}

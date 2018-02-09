@@ -1,12 +1,15 @@
-<script src="{{ '/assets/js/anchor.min.js' | relative_url }}"></script>
+{% if page.layout == 'post' %}
 
-<script>
-    anchors.options = {
-        visible: 'always',
-        placement: 'left'
-    };
-    anchors.add();
-</script>
+    <script src="{{ '/assets/js/anchor.min.js' | relative_url }}"></script>
+    <script>
+        anchors.options = {
+            visible: 'always',
+            placement: 'left'
+        };
+        anchors.add();
+    </script>
+
+{% endif %}
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
