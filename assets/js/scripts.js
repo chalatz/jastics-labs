@@ -81,6 +81,9 @@ $(document).ready(function(){
         $('#open-menu--page').on('click', function(){
 
             $(this).hide();
+
+            $('#hire-us-btn--page').addClass('hire-us-btn--white-bordered');
+
             $('#close-menu--page').fadeIn();
             $('#nav-items').fadeIn();
             $('#nav-wrapper').fadeIn();
@@ -90,6 +93,9 @@ $(document).ready(function(){
         $('#close-menu--page').on('click', function(){
 
             $(this).hide();
+
+            $('#hire-us-btn--page').removeClass('hire-us-btn--white-bordered');
+
             $('#close-menu--page').fadeOut();
             $('#nav-items').fadeOut();
             $('#nav-wrapper').fadeOut();
