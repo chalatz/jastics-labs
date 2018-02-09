@@ -33,6 +33,17 @@ instagram_url: https://www.instagram.com/jasticslabs/
 paginate: 5
 paginate_path: "/blog/page/:num/"
 
+collections:
+  whitepapers:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: whitepapers
+    values:
+      layout: post
+
 # Build settings
 markdown: kramdown
 # theme: minima
