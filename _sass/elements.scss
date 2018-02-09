@@ -81,3 +81,13 @@
         font-weight: bold;
     }
 }
+
+[data-anchorjs-icon]::after {
+    color: $darkblue;
+}
+
+a.anchorjs-link:hover {
+    &:after {
+        color: $lightblue;
+    }
+}
