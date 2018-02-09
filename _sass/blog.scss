@@ -1,5 +1,21 @@
-.blog {
+.blog-pagination {
 
+    text-align: center;
     
+    &__nav-item {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: $lightblue;
+        border-radius: 100%;
+        margin: 0 12px;
+        -webkit-transition: transform .2s linear;
+                transition: transform .2s linear;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+
+    }
 
 }
