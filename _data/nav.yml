@@ -7,7 +7,7 @@ items:
     url: /
 
   - name: Expertise
-    url: /
+    url: expertise
 
   - name: Blog
     url: blog

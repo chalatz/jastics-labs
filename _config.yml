@@ -35,7 +35,10 @@ paginate_path: "/blog/page/:num/"
 
 collections:
   whitepapers:
-    output: true
+    output: true    
+  expertise:
+    output: false
+
 
 defaults:
   - scope:
