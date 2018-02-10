@@ -53,8 +53,14 @@
 
     }
 
+    &__item-content {
+        & > p {
+            margin: 16px 0;
+        }
+    }
+
 }
 
 .page__header--expertise {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
