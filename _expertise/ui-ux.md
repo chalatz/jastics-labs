@@ -4,7 +4,7 @@ title: UI/UX
 tags:
     - FrontEnd 
     - JS
-file: The file
+media_file: /assets/videos/uiux.mp4
 ---
 
 Jastics Labs is a team, which has years of experience in developing various backend systems. However, along with backend system with a lot of underground work we often deliver frontend part as well.
