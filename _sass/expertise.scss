@@ -22,7 +22,7 @@
         -webkit-transition: color .1s linear;
                 transition: color .1s linear;
         &:hover,
-        &.active {
+        &--active {
             color: $lightblue;
         }
     }
@@ -33,7 +33,14 @@
     }
 
     &__content {
+        display: none;
         @include clearfix;
+        animation: fadeEffect .2s;
+
+        &--active {
+            display: block;
+        }
+
     }
 
     &__content-item {

@@ -11,7 +11,7 @@ title: Expertise
 
         {% for item in expertise_items %}
             <li class="expertise__tag">
-                <a class="expertise__tag-link" href="#">
+                <a class="expertise__tag-link{% if forloop.index == 1 %} expertise__tag-link--active{% endif %}" href="#expertise-{{ item.title | slugify }}">
                     #{{ item.title }}
                 </a>
             </li>
@@ -23,7 +23,7 @@ title: Expertise
 
         {% for item in expertise_items %}
 
-            <div class="expertise__content">
+            <div id="expertise-{{ item.title | slugify }}" class="expertise__content{% if forloop.index == 1 %} expertise__content--active{% endif %}">
 
                 <div class="expertise__content-item expertise__content-item--content">
 

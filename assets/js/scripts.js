@@ -1,35 +1,5 @@
 $(document).ready(function(){
 
-    var clients_slider = function(){
-
-        $('.our-clients__content').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: false
-        });
-
-    };
-
-    var clients_feedback = function(){
-
-        var client = $('.our-clients__item');
-
-        client.on('click', function(){
-            
-            var client_id = $(this).attr('data-client');
-
-            $('.our-clients__item').removeClass('our-clients__item--active');
-            $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
-
-            $(this).addClass('our-clients__item--active');
-            $("#"+client_id).addClass('our-clients__feedback-item--active');
-
-            console.log('clicked ' + client_id);
-
-        });       
-
-    };
-
     var handle_home_nav = function(){
         
         $('#open-menu').on('click', function(){
@@ -105,12 +75,38 @@ $(document).ready(function(){
 
     };
 
+    var expertise_tabs = function(){
+
+        $('.expertise__tag-link').on('click', function(e){
+
+            var $this = $(this),
+            theid = $this.attr('href');
+
+            // Hide all tabbed content
+            $('.expertise__content').hide();
+            //$('.expertise__content').removeClass('expertise__content--active');
+
+            // Remove the 'active' class from the anchors
+            $('.expertise__tag-link').removeClass('expertise__tag-link--active');
+
+            // Show the tabbed content
+            $(theid).fadeIn('fast');
+            //$(theid).addClass('expertise__content--active');
+
+            // Add the 'active' class to the anchor clicked
+            $this.addClass('expertise__tag-link--active');
+
+            e.preventDefault();
+
+
+        });
+
+    };
+
     handle_home_nav();
 
     handle_page_nav();
 
-    clients_slider();
-
-    clients_feedback();
+    expertise_tabs();
 
 });
