@@ -1,0 +1,20 @@
+.about-us {
+
+    .container {
+        @include clearfix;
+    }
+
+    &__header-item {
+        float: left;
+    }
+
+    &__header-text {
+        width: 40%;
+    }
+
+    &__header-img-wrapper {
+        width: 60%;
+        text-align: right;
+    }
+
+}

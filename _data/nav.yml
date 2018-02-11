@@ -4,7 +4,7 @@ items:
     url: /
 
   - name: About Us
-    url: /
+    url: about-us
 
   - name: Expertise
     url: expertise
