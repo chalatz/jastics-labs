@@ -16,6 +16,12 @@
         @include breakpoint(medium) {
             margin-bottom: 4vw;
         }
+
+        &--active {
+            .expertise__tag-link {
+                color: $lightblue;
+            }
+        }
     }
 
     &__tag-link {
@@ -24,8 +30,7 @@
         text-transform: uppercase;
         -webkit-transition: color .1s linear;
                 transition: color .1s linear;
-        &:hover,
-        &--active {
+        &:hover {
             color: $lightblue;
         }
     }
@@ -39,14 +44,7 @@
     }
 
     &__content {
-        display: none;
         @include clearfix;
-        animation: fadeEffect .2s;
-
-        &--active {
-            display: block;
-        }
-
     }
 
     &__content-item {
