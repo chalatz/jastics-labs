@@ -33,6 +33,10 @@
             padding: 0 28px;
         }
 
+        &--about-us {
+            font-size: 12px;
+        }
+
     }
 
     &:hover {
@@ -96,6 +100,9 @@
     &--learn-more {
         padding-top: 16px;
         padding-bottom: 16px;
+        @include breakpoint(small) {
+            width: auto;
+        }
     }
 
     &--centered {
