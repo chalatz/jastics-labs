@@ -1,5 +1,17 @@
 .about-us {
 
+    &__item {
+        margin-bottom: 100px;
+    }
+
+    &__info {
+        width: 60%;
+    }
+
+    &__btn {
+        margin-top: 45px;
+    }
+
     .container {
         @include clearfix;
     }
@@ -15,6 +27,37 @@
     &__header-img-wrapper {
         width: 60%;
         text-align: right;
+    }
+
+    &__numbers-wrapper {
+        background-color: #ebebeb;
+        padding: 40px 6vw;
+    }
+
+    &__numbers {
+        text-align: justify;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    &__numbers-number {
+        font-family: 'Gotham Pro Bold', sans-serif;
+        font-size: 80px;
+    }
+
+    &__numbers-text {
+        font-size: 25px;
+        max-width: 7em;
+    }
+
+    &__numbers-item {
+        color: $lightblue;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
     }
 
 }
