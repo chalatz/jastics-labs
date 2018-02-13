@@ -16,19 +16,19 @@
 
     <div class="section__content section__content--our-clients">
 
-        <div class="our-clients__content">
+        <ul id="our-clients__content" class="our-clients__content">
 
             {% for item in site.data.our-clients.items %}
                 
-                <div class="our-clients__item {% if forloop.index == 1 %}our-clients__item--active{% endif %}" data-client="{{ item.name | slugify }}-client">
+                <li class="our-clients__item {% if forloop.index == 1 %}our-clients__item--active{% endif %}" data-client="{{ item.name | slugify }}-client">
 
                     <img class="our-clients__item-img" src="{{ '/assets/images/clients/' | append: item.image | relative_url }}" alt="{{ item.name }} logo" title="{{ item.name }}">
     
-                </div>
+                </li>
 
             {% endfor %}
 
-        </div>
+        </ul>
 
         <div class="our-clients__feedback">
 

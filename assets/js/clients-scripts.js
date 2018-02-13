@@ -2,10 +2,23 @@ $(document).ready(function(){
 
     var clients_slider = function(){
 
-        $('.our-clients__content').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: false
+        $("#our-clients__content").lightSlider({
+            item: 4,
+            controls: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        item: 3
+                    }
+                },
+                {
+                    breakpoint: 460,
+                    settings: {
+                        item: 2
+                    }
+                }
+            ]
         });
 
     };
