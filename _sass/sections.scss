@@ -169,6 +169,7 @@
         display: none;
         
         &--active {
+            animation: fadein .5s;
             display: block;
         }
     }
