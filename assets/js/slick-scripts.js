@@ -29,8 +29,44 @@ $(document).ready(function(){
         });       
 
     };
+
+    //function slickIt(){
+
+        var maxWidth = 768;
+
+        var slickVar = {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: maxWidth,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        };
+
+        var runSlick = function(){
+            $('.our-clients__content').slick(slickVar);
+        }
+
+        runSlick();
+
+    //}
+
+    //slickIt();
+
+    $(window).on('resize', function(){
+        var width = $(window).width();
+        if(width < maxWidth) {
+          // reinit slick while window's width is less than maximum width (641px)
+          runSlick();
+        }
+    });
     
-    clients_slider();
+    //clients_slider();
 
     clients_feedback();
 
