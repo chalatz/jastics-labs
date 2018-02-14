@@ -131,4 +131,12 @@
 
     }
 
+    &--section {
+        @include breakpoint(small) {
+            width: 65%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
 }

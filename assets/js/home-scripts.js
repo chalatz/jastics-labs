@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
-    var scroll_to = function(button_id, href){
+    var scroll_to = function(button_id, the_href){
 
-        $('#'+button_id).on('click', function(){
+        $('#'+button_id).on('click', function(event){
             $('html, body').animate({
-                scrollTop: $('#'+href).offset().top
+                scrollTop: $('#'+the_href).offset().top
             }, 1000);
+            event.preventDefault();
         });
     };
 
