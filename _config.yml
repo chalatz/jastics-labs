@@ -37,6 +37,14 @@ disqus:
   comments: true
   shortname: https-jastics-com
 
+google_analytics:
+  enabled: false
+  tracking_code: UA-106871498-1
+
+google_site_verification:
+  use: true
+  content: jdXpZtJnJLL_sJMFkGHwdy3l0Y6sIvegZ0OQGoYRV4o
+
 collections:
   whitepapers:
     output: true    
