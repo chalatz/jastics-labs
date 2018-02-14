@@ -22,12 +22,29 @@ $(document).ready(function(){
 
         });
 
-        $('#close-menu').on('click', function(){
-            $(this).hide();
+        var close_the_menu = function(){
+            $('#close-menu').hide();
             $('#close-menu').fadeOut();
             $('#nav-items').fadeOut();
             $('#nav-wrapper').fadeOut();
             $('#open-menu').fadeIn();
+        }
+
+        $(document).on('click', function(){
+            if(!$(event.target).closest('#nav-wrapper').length && !$(event.target).closest('#open-menu').length && !$(event.target).closest('#nav-items').length){
+                close_the_menu();
+            }
+        });
+
+        $('#close-menu').on('click', function(){
+            close_the_menu();
+        });
+
+        // Hide menu on ESC key
+        $(document).on('keydown', function(e){            
+            if($('#nav-items').is(':visible') && e.keyCode == 27){
+                close_the_menu();
+            }            
         });
 
         $(window).resize(function(){
