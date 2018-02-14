@@ -13,6 +13,9 @@ $(document).ready(function(){
     var clients_slider = function(){
 
         $("#our-clients__content").lightSlider({
+            onSliderLoad: function(){
+                $("#our-clients__content").removeClass('cS-hidden');
+            },
             item: 4,
             controls: false,
             // responsive: [
@@ -51,27 +54,32 @@ $(document).ready(function(){
         var client = $('.our-clients__item');
 
         client.on('click', function(){
-            
-            var $this = $(this),
-                client_id = $this.attr('data-client');
 
-            $('.our-clients__item').removeClass('our-clients__item--active');
-            $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
+            var $this = $(this);
 
-            $this.addClass('our-clients__item--active');
-            $("#"+client_id).addClass('our-clients__feedback-item--active');
+            if($this.hasClass('our-clients__item--has-feedback')){
 
-            var handle_arrow = function(el){
-                var el_left = el.position().left,
-                    el_width = el.width(),
-                    arrow_pos = el_left + el_width * .25;
-    
-                $('#our-clients__arrow').animate({
-                    left: arrow_pos + 'px'
-                },1000);
-            };
+                var client_id = $this.attr('data-client')
 
-            handle_arrow($this);
+                $('.our-clients__item').removeClass('our-clients__item--active');
+                $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
+
+                $this.addClass('our-clients__item--active');
+                $("#"+client_id).addClass('our-clients__feedback-item--active');
+
+                var handle_arrow = function(el){
+                    var el_left = el.position().left,
+                        el_width = el.width(),
+                        arrow_pos = el_left + el_width * .25;
+        
+                    $('#our-clients__arrow').animate({
+                        left: arrow_pos + 'px'
+                    },1000);
+                };
+
+                handle_arrow($this);
+
+            }
 
         });       
 

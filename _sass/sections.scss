@@ -171,6 +171,14 @@
         }
     }
 
+    &__item-img {
+        &--has-feedback {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
     &__feedback {
         width: 90%;
     }
