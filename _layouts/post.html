@@ -50,3 +50,7 @@ layout: default
 <a href="{{ return_url | relative_url }}" class="return-back">
     <span class="return-back__arrow">&larr;</span> Back to {{ page_type }}
 </a>
+
+{% if site.disqus.comments %}
+    {% include comments.html %}
+{% endif %}

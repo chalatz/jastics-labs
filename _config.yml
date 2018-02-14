@@ -33,6 +33,10 @@ instagram_url: https://www.instagram.com/jasticslabs/
 paginate: 5
 paginate_path: "/blog/page/:num/"
 
+disqus:
+  comments: true
+  shortname: https-jastics-com
+
 collections:
   whitepapers:
     output: true    
