@@ -1,5 +1,5 @@
 .banner {
-    background-color: #cbcbcb;
+    background-color: #494949;
     background-image: url(/assets/images/site/banner-bg.png);
     min-height: 100vh;
     background-position: center;
@@ -32,6 +32,10 @@
             width: 50px;
             right: 5vw;
             bottom: 2vh;
+        }
+
+        @include breakpoint(small) {
+            display: none;
         }
 
     }

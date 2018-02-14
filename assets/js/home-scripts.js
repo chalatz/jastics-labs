@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+    var scroll_to = function(button_id, href){
+
+        $('#'+button_id).on('click', function(){
+            $('html, body').animate({
+                scrollTop: $('#'+href).offset().top
+            }, 1000);
+        });
+    };
+
     var clients_slider = function(){
 
         $("#our-clients__content").lightSlider({
@@ -66,6 +75,11 @@ $(document).ready(function(){
         });       
 
     };
+
+    scroll_to('banner-goto', 'what-we-do');
+    scroll_to('what-we-do-goto', 'how-we-work');
+    scroll_to('how-we-work-goto', 'our-clients');
+    scroll_to('our-clients-goto', 'hire-us');    
     
     clients_slider();
 
