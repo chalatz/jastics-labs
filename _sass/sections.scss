@@ -121,6 +121,7 @@
             display: block;
             width: 100%;
             margin-bottom: 0;
+            padding-top: 30px;
             padding-bottom: 12px;;
         }
     }
@@ -135,6 +136,9 @@
         font-size: 30px;
         color: $darkblue;
         margin: 40px 0;
+        @include breakpoint(medium) {
+            margin: 25px 0;
+        }
     }
 
     &__item-desc {
@@ -142,10 +146,14 @@
         color: $darkblue;
         line-height: 1.8;
         padding-bottom: 60px;
+        @include breakpoint(medium) {
+            padding-bottom: 0;
+        }
     }
 
     &__btn {
         margin: 40px 0 15px 0;
+        text-align: center;
     }
 
 }
@@ -230,6 +238,10 @@
             box-shadow: 0px 5px 28px -11px rgba(0, 0, 0, 0.75)
         }
 
+    }
+
+    &__btn {
+        text-align: center;
     }
 
 }

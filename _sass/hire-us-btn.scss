@@ -56,10 +56,10 @@
             transition: box-shadow .1s linear;
 
         @include breakpoint(small) {
-            width: 80%;
+            width: auto;
             text-align: center;
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
 
         &:hover {
@@ -91,7 +91,7 @@
 
     &--send {
         @include breakpoint(small) {
-            width: 65%;
+            width: auto;
             padding-top: 16px;
             padding-bottom: 16px;
         }
@@ -106,8 +106,11 @@
     }
 
     &--centered {
-        margin-left: 50%;
-        transform: translateX(-50%);
+        // margin-left: 50%;
+        // transform: translateX(-50%);
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     &--white-bordered {
@@ -129,14 +132,6 @@
             }  
         }
 
-    }
-
-    &--section {
-        @include breakpoint(small) {
-            width: 65%;
-            padding-top: 16px;
-            padding-bottom: 16px;
-        }
     }
 
 }
