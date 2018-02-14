@@ -160,6 +160,10 @@
 
 .our-clients {
 
+    &__content {
+        list-style: none;
+    }
+
     &__item {
         
         &--active {
@@ -205,6 +209,14 @@
             position: static;
         }
 
+    }
+
+    &__arrow {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        top: 7px;
+        display: inline-block;
     }
 
 }
