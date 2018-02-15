@@ -59,6 +59,9 @@ defaults:
       layout: post
       page_type: whitepaper
 
+sass:
+  style: compressed      
+
 # Build settings
 markdown: kramdown
 # theme: minima
