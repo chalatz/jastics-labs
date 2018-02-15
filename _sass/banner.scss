@@ -7,6 +7,16 @@
     background-size: cover;
     position: relative;
 
+    @include breakpoint(large) {
+        background-image: url(/assets/images/site/banner-bg-large.png);
+    }
+    @include breakpoint(medium) {
+        background-image: url(/assets/images/site/banner-bg-medium.png);
+    }
+    @include breakpoint(small) {
+        background-image: url(/assets/images/site/banner-bg-small.png);
+    }
+
     &__container {
         padding: 40px 0;
     }
