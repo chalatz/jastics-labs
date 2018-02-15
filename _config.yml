@@ -58,7 +58,6 @@ collections:
   expertise:
     output: false
 
-
 defaults:
   - scope:
       path: ""
