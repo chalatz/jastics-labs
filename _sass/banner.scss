@@ -1,6 +1,6 @@
 .banner {
     background-color: #494949;
-    background-image: url(assets/images/site/banner-bg.png);
+    background-image: url(/assets/images/site/banner-bg.png);
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,13 +8,13 @@
     position: relative;
 
     @include breakpoint(large) {
-        background-image: url(assets/images/site/banner-bg-large.png);
+        background-image: url(/assets/images/site/banner-bg-large.png);
     }
     @include breakpoint(medium) {
-        background-image: url(assets/images/site/banner-bg-medium.png);
+        background-image: url(/assets/images/site/banner-bg-medium.png);
     }
     @include breakpoint(small) {
-        background-image: url(assets/images/site/banner-bg-small.png);
+        background-image: url(/assets/images/site/banner-bg-small.png);
     }
 
     &__container {
