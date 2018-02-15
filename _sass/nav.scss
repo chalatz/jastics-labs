@@ -33,6 +33,7 @@
         padding: 16px 0;
         margin-bottom: 16px;
         font-size: 18px;
+        -webkit-transition: color .2s linear;
         transition: color .2s linear;
         &:hover {
             color: $darkblue;

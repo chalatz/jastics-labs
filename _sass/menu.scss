@@ -9,6 +9,8 @@
         fill: #fff;
         cursor: pointer;
 
+        -webkit-transition: fill .2s linear;
+
         transition: fill .2s linear;
 
         &:hover {            

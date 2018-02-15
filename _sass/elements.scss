@@ -21,10 +21,12 @@
     position: absolute;
     bottom: $banner_bottom;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 46px;
     height: 46px;
     z-index: 99;
+    -webkit-transition: stroke .2s linear;
     transition: stroke .2s linear;
     &:hover {
         .scroll-down-icon {

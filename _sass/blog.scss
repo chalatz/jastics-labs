@@ -9,11 +9,14 @@
         background-color: $lightblue;
         border-radius: 100%;
         margin: 0 12px;
-        -webkit-transition: transform .2s linear;
-                transition: transform .2s linear;
+        -webkit-transition: -webkit-transform .2s linear;
+        transition: -webkit-transform .2s linear;
+        transition: transform .2s linear;
+        transition: transform .2s linear, -webkit-transform .2s linear;
 
         &:hover {
-            transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+                    transform: scale(1.5);
         }
 
     }

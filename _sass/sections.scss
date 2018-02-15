@@ -251,11 +251,16 @@
         outline: none;
         border-radius: 12px;
         border: 1px solid $lightergray;
-        box-shadow: 0px 18px 29px -29px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 18px 29px -29px rgba(0,0,0,0.75);
+                box-shadow: 0px 18px 29px -29px rgba(0,0,0,0.75);
+        -webkit-transition: -webkit-box-shadow .1s linear;
+        transition: -webkit-box-shadow .1s linear;
         transition: box-shadow .1s linear;
+        transition: box-shadow .1s linear, -webkit-box-shadow .1s linear;
 
         &:focus {
-            box-shadow: 0px 5px 28px -11px rgba(0, 0, 0, 0.75)
+            -webkit-box-shadow: 0px 5px 28px -11px rgba(0, 0, 0, 0.75);
+                    box-shadow: 0px 5px 28px -11px rgba(0, 0, 0, 0.75)
         }
 
     }

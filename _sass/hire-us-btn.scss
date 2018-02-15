@@ -53,7 +53,10 @@
         border: 2px solid $lightblue;
 
         -webkit-transition: box-shadow .1s linear;
+            -webkit-transition: -webkit-box-shadow .1s linear;
+            transition: -webkit-box-shadow .1s linear;
             transition: box-shadow .1s linear;
+            transition: box-shadow .1s linear, -webkit-box-shadow .1s linear;
 
         @include breakpoint(small) {
             width: auto;
@@ -63,7 +66,8 @@
         }
 
         &:hover {
-            box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
             background-color: $lightblue;
             .hire-us-btn__text {
                 color: #fff;
@@ -77,10 +81,14 @@
         background-color: $lightblue;
         border: 2px solid $lightblue;
         -webkit-transition: box-shadow .1s linear, border-color .2s linear;
+            -webkit-transition: border-color .2s linear, -webkit-box-shadow .1s linear;
+            transition: border-color .2s linear, -webkit-box-shadow .1s linear;
             transition: box-shadow .1s linear, border-color .2s linear;
+            transition: box-shadow .1s linear, border-color .2s linear, -webkit-box-shadow .1s linear;
         
         &:hover {
-            box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
+                    box-shadow: 0px 0px 41px -11px rgba(0,0,0,0.75);
             background-color: $lightblue;
             .hire-us-btn__text {
                 color: #fff;
