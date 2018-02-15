@@ -107,3 +107,9 @@ a.anchorjs-link {
 .disqus_thread {
     margin-top: 4vw;
 }
+
+button {
+    &:hover {
+        cursor: pointer;
+    }
+}
