@@ -23,11 +23,11 @@ description: >- # this means to ignore newlines until "baseurl:"
   Backend development, High Load systems, Internet of things, Frontend development.
   Java, Scala, JS. Let's work together!
 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/jastics-labs" # the subpath of your site, e.g. /blog
 
-url: "https://jastics.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://chalatz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-repository: 'ivanursul/jastics'
+repository: 'chalatz/jastics-labs'
 
 github: [metadata]
 
@@ -42,15 +42,15 @@ paginate_path: "/blog/page/:num/"
 
 disqus:
   comments: true
-  shortname: https-jastics-com
+  shortname: chalatz-jastics
 
 google_analytics:
   enabled: false
   tracking_code: UA-106871498-1
 
 google_site_verification:
-  use: true
-  content: jdXpZtJnJLL_sJMFkGHwdy3l0Y6sIvegZ0OQGoYRV4o
+  use: false
+  content: 
 
 collections:
   whitepapers:
