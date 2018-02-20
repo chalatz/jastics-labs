@@ -5,7 +5,7 @@ $(document).ready(function(){
             $('#close-menu').hide();
             $('#close-menu').fadeOut();
             $('#nav-items').fadeOut();
-            $('#nav-wrapper').fadeOut();
+            $('#nav-wrapper').fadeOut().removeClass('fixed-menu');
             $('#open-menu').fadeIn();
         }
         if(page == 'page'){
@@ -86,7 +86,7 @@ $(document).ready(function(){
 
             $('#close-menu--page').fadeIn();
             $('#nav-items').fadeIn();
-            $('#nav-wrapper').fadeIn();
+            $('#nav-wrapper').fadeIn().addClass('fixed-menu');
 
         });
 

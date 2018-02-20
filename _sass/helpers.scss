@@ -8,3 +8,8 @@ img {
     filter: alpha(opacity=0);
     overflow: hidden;
 }
+
+.fixed-menu {
+    position: fixed !important;
+    height: 100%;
+}
