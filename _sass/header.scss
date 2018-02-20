@@ -10,6 +10,16 @@
             top: 8px;
         }
 
+        &--page {
+
+            @include breakpoint(small) {
+                .hire-us-btn {
+                    display: none;
+                }
+            }
+
+        }
+
     }
 
     &__logo {
