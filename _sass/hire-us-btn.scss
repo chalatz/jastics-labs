@@ -100,11 +100,11 @@
             display: none;
         }        
 
-        // .site-header--page.menu-closed & {
-        //     @media (max-width: 500px) {
-        //         display: none;
-        //     }
-        // }
+        .site-header--page.menu-closed & {
+            @media (max-width: 500px) {
+                display: none;
+            }
+        }
 
         .site-header--page.menu-open & {
             @media (max-width: 500px) {

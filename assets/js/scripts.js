@@ -14,9 +14,13 @@ $(document).ready(function(){
             $('#hire-us-btn--page').removeClass('hire-us-btn--white-bordered');
 
             $('#close-menu--page').fadeOut();
-            $('#nav-items').fadeOut();
+            $('#nav-items').hide();
             $('#nav-wrapper').fadeOut();
-            $('#open-menu--page').fadeIn();        
+            $('#open-menu--page').fadeIn();
+
+            $('#site-header__logo').removeClass('site-header__logo--hidden');
+            $('.site-header--page').removeClass('menu-open').addClass('menu-closed');            
+
         }
     }    
 
