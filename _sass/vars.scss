@@ -24,6 +24,11 @@
     src: url("/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Blissful Thinking";
+    src: url("/assets/fonts/BlissfulThinking.otf") format("opentype");
+}
+
 @mixin breakpoint($point) {
     @if $point == large {
         @media (max-width: 1024px) { @content ; }
