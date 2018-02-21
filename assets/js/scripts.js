@@ -16,7 +16,7 @@ $(document).ready(function(){
             $('#close-menu--page').fadeOut();
             $('#nav-items').fadeOut();
             $('#nav-wrapper').fadeOut();
-            $('#open-menu--page').fadeIn();            
+            $('#open-menu--page').fadeIn();        
         }
     }    
 
@@ -62,7 +62,6 @@ $(document).ready(function(){
 
         $(window).resize(function(){
             if($('#nav-wrapper').is(':visible')){
-                console.log('visible');
                 var banner_height = $('#banner').height();
                 $('#nav-wrapper').css('height', banner_height + 'px');
                 if($('#banner-goto').offset().left >= $('#nav-wrapper').offset().left){
@@ -82,7 +81,9 @@ $(document).ready(function(){
 
             $(this).hide();
 
-            $('#hire-us-btn--page').addClass('hire-us-btn--white-bordered');
+            $('#site-header__logo').hide();
+
+            $('#hire-us-btn--page').addClass('hire-us-btn--white-bordered').fadeIn();
 
             $('#close-menu--page').fadeIn();
             $('#nav-items').fadeIn();

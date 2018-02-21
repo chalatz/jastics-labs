@@ -23,13 +23,28 @@
     }
 
     &__logo {
+
         float: left;
+        font-family: "Blissful Thinking", sans-serif;
+        font-size: 40px;
+        color: $darkblue;
+        letter-spacing: 1px;
+
+        -webkit-transition: color .2s linear;
+                transition: color .2s linear;
+
+        &:hover {
+            color: $lightblue;
+        }
+
+
         @include breakpoint(small) {
             float: none;
             display: block;
             text-align: left;
             margin-bottom: 12px;
         }
+
     }
 
     &--page {
@@ -37,7 +52,25 @@
         padding: 25px 0 75px;
 
         @include breakpoint(medium) {
-            padding-bottom: 15vw;
+            padding-bottom: 8vw;
+        }
+
+        @include breakpoint(small) {
+            height: 110px;
+        }
+
+        .site-header__logo {
+
+            @include breakpoint(small) {
+                display: inline-block;
+            };
+
+
+            &--page {
+                @include breakpoint(small) {
+                    margin-bottom: 0;
+                }
+            }
         }
 
     }

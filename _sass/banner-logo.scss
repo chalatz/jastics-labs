@@ -3,6 +3,18 @@
     display: inline-block;
     margin-top: 25vh;
 
+    font-family: "Blissful Thinking", sans-serif;
+    font-size: 70px;
+    color: #fff;
+    letter-spacing: 1px;
+
+    -webkit-transition: color .2s linear;
+            transition: color .2s linear;
+
+    &:hover {
+        color: $lightblue;
+    }
+
     @include breakpoint(medium) {
         margin-top: 6vh;
     }
