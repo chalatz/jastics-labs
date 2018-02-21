@@ -12,11 +12,23 @@
 
         &--page {
 
-            @include breakpoint(small) {
-                .hire-us-btn {
-                    display: none;
+            .site-header--page.menu-open & {
+                @media (max-width: 500px) {
+                    width: 100%;
+                    text-align: right;
                 }
             }
+
+            // @media (max-width: 500px) {
+            //     position: static;
+            // }
+
+            // @include breakpoint(small) {
+            //     .hire-us-btn {
+            //         display: none;
+            //     }
+            // }
+
 
         }
 
@@ -55,7 +67,7 @@
             padding-bottom: 8vw;
         }
 
-        @include breakpoint(small) {
+        @media (max-width: 500px) {
             height: 110px;
         }
 
@@ -66,9 +78,9 @@
             };
 
 
-            &--page {
-                @include breakpoint(small) {
-                    margin-bottom: 0;
+            &--hidden {
+                @media (max-width: 500px) {
+                    display: none;
                 }
             }
         }

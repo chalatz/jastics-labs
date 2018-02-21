@@ -81,7 +81,9 @@ $(document).ready(function(){
 
             $(this).hide();
 
-            $('#site-header__logo').hide();
+            $('.site-header--page').removeClass('menu-closed').addClass('menu-open');
+
+            $('#site-header__logo').addClass('site-header__logo--hidden');
 
             $('#hire-us-btn--page').addClass('hire-us-btn--white-bordered').fadeIn();
 
