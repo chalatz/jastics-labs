@@ -18,7 +18,7 @@
 
         &--page {
             z-index: 2 ;
-            @include breakpoint(small) {
+            @media (max-width: 500px) {
                 text-align: left;
             }
         }
@@ -29,7 +29,7 @@
         display: inline-block;
         text-align: left;
         &--page {
-            @include breakpoint(small) {
+            @media (max-width: 500px) {
                 padding-left: 16px;
             }
         }

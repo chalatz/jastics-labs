@@ -42,7 +42,11 @@
         padding: 25px 0 75px;
 
         @include breakpoint(medium) {
-            padding-bottom: 15vw;
+            padding-bottom: 8vw;
+        }
+
+        @include breakpoint(small) {
+            height: 110px;
         }
 
         .site-header__logo {

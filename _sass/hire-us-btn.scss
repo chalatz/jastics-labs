@@ -96,7 +96,7 @@
             }
         }
 
-        @include breakpoint(small) {
+        @media (max-width: 540px) {
             display: none;
         }
 
