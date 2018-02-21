@@ -11,6 +11,9 @@ $(document).ready(function(){
         if(page == 'page'){
             $('#close-menu--page').hide();
 
+            $('#site-header__logo--page').show();
+            $('#hire-us-btn--page').hide();
+
             $('#hire-us-btn--page').removeClass('hire-us-btn--white-bordered');
 
             $('#close-menu--page').fadeOut();
@@ -82,7 +85,9 @@ $(document).ready(function(){
 
             $(this).hide();
 
-            $('#hire-us-btn--page').addClass('hire-us-btn--white-bordered');
+            $('#site-header__logo--page').hide();
+
+            $('#hire-us-btn--page').addClass('hire-us-btn--white-bordered').fadeIn();
 
             $('#close-menu--page').fadeIn();
             $('#nav-items').fadeIn();
