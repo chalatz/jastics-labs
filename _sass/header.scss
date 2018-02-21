@@ -13,7 +13,21 @@
     }
 
     &__logo {
+
         float: left;
+        font-family: "Blissful Thinking", sans-serif;
+        font-size: 40px;
+        color: $darkblue;
+        letter-spacing: 1px;
+
+        -webkit-transition: color .2s linear;
+                transition: color .2s linear;
+
+        &:hover {
+            color: $lightblue;
+        }
+
+
         @include breakpoint(small) {
             float: none;
             display: block;
