@@ -1,10 +1,10 @@
-<header class="site-header site-header--page container">
+<header class="site-header site-header--page container menu-closed">
 
-    <a href="{{'/' | relative_url}}" class="site-header__logo">
-            <img class="site-header__logo-img" src="{{ '/assets/images/site/logo.png' | relative_url }}" alt="Jastics Labs logo">
+    <a id="site-header__logo" href="{{'/' | relative_url}}" class="site-header__logo">
+        <span class="site-header-logo__text">{{ site.title }}</span>
     </a>
 
-    <div class="site-header__links site-header__links--page" id="header-links" >
+    <div class="site-header__links site-header__links--page" id="header-links">
         
         <a href="{{ '/hire' | relative_url }}" class="hire-us-btn hire-us-btn--page" id="hire-us-btn--page">
             <span class="hire-us-btn__text">

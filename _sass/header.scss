@@ -10,16 +10,43 @@
             top: 8px;
         }
 
+        &--page {
+
+            .site-header--page.menu-open & {
+                @media (max-width: 500px) {
+                    width: 100%;
+                    text-align: right;
+                    padding-right: 16px;
+                }
+            }
+
+        }
+
     }
 
     &__logo {
+
         float: left;
+        font-family: "Blissful Thinking", sans-serif;
+        font-size: 40px;
+        color: $darkblue;
+        letter-spacing: 1px;
+
+        -webkit-transition: color .2s linear;
+                transition: color .2s linear;
+
+        &:hover {
+            color: $lightblue;
+        }
+
+
         @include breakpoint(small) {
             float: none;
             display: block;
             text-align: left;
             margin-bottom: 12px;
         }
+
     }
 
     &--page {
@@ -27,7 +54,25 @@
         padding: 25px 0 75px;
 
         @include breakpoint(medium) {
-            padding-bottom: 15vw;
+            padding-bottom: 8vw;
+        }
+
+        @media (max-width: 500px) {
+            height: 110px;
+        }
+
+        .site-header__logo {
+
+            @include breakpoint(small) {
+                display: inline-block;
+            };
+
+
+            &--hidden {
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
         }
 
     }
