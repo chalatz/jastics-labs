@@ -4,9 +4,13 @@
     margin-top: 25vh;
 
     font-family: "Blissful Thinking", sans-serif;
-    font-size: 70px;
+    font-size: 90px;
     color: #fff;
     letter-spacing: 1px;
+
+    @include breakpoint(medium) {
+        font-size: 70px;
+    }
 
     -webkit-transition: color .2s linear;
             transition: color .2s linear;
