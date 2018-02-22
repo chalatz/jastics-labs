@@ -146,6 +146,10 @@
 
 @include breakpoint(large) {
     @include what_we_do_svg(.8);
+
+}
+@include breakpoint(small) {
+    @include what_we_do_svg(1.5);
 }
 
 .what-we-do__icon {
@@ -155,7 +159,7 @@
 
 .what-we-do__icon-svg {
     max-width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 
 .how-we-work__item-icon {

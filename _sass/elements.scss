@@ -40,6 +40,9 @@
 
     &--section {
         bottom: 0;
+        @include breakpoint(medium) {
+            display: none;
+        }
     }
 
     &--hover-darkblue {

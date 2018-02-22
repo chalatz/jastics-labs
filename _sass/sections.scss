@@ -1,10 +1,15 @@
 .section {
 
     padding-top: 80px;
+    padding-top: 8vh;
+    
+    padding-bottom: 8vh;
 
     &__header {
         margin: 47px 0 80px 0;
+        margin: 5vh 0 6vh 0;
         @include breakpoint(medium) {
+            margin-top: 30px;
             margin-bottom: 50px;
         }
     }
@@ -14,12 +19,19 @@
         margin: 0 0 35px 0;
         color: $darkblue;
         font-size: 50px;
+        @include breakpoint(medium) {
+            font-size: 40px
+        }
+        @include breakpoint(small) {
+            font-size: 30px;
+        }
     }
 
     &__subtitle {
         line-height: 1.5;
         color: $lightgray;
         font-size: 25px;
+        margin: 2vh 0;
     }
 
     &__content {
@@ -30,7 +42,8 @@
         &--our-clients {
             width: 100%;
             margin: 0;
-            padding-bottom: 60px;            
+            padding-bottom: 60px;           
+            padding-bottom: 8vh;           
         }
 
     }
@@ -40,8 +53,8 @@
 .what-we-do {
 
     &__content {
-        margin-bottom: 20px;
-        padding-bottom: 60px;;
+        padding-bottom: 60px;
+        padding-bottom: 8vh;
     }
 
     &__icons {
@@ -53,6 +66,7 @@
         width: 33%;
         text-align: center;
         margin-bottom: 80px;
+        margin-bottom: 6vh;
         padding: 0 12px;
 
         @include breakpoint(large) {
@@ -63,7 +77,7 @@
             margin-bottom: 50px;
         }
         @include breakpoint(small) {
-            width: 70%;
+            width: 95%;
             margin-bottom: 40px;
         }
 
@@ -86,6 +100,7 @@
 .how-we-work {
 
     padding-bottom: 60px;
+    padding-bottom: 8vh;
 
     &__content {
         overflow: hidden;
@@ -103,10 +118,15 @@
         @include breakpoint(medium) {
             width: 100%;
         }
+
+        @include breakpoint(small) {
+            border: none;
+        }
     }
 
     &__item {
         padding-top: 50px;
+        padding-top: 4vh;
         padding-left: 12px;
         prefix: 12px;
         float: left;
@@ -136,6 +156,7 @@
         font-size: 30px;
         color: $darkblue;
         margin: 40px 0;
+        margin: 4vh 0;
         @include breakpoint(medium) {
             margin: 25px 0;
         }
@@ -146,6 +167,7 @@
         color: $darkblue;
         line-height: 1.8;
         padding-bottom: 60px;
+        padding-bottom: 3vh;
         @include breakpoint(medium) {
             padding-bottom: 0;
         }
@@ -186,6 +208,7 @@
     &__feedback-item {
         border: 2px solid $lightergray;
         padding: 40px 5% 80px 15%;
+        padding: 2vh 5% 4vh 15%;
         display: none;
         
         &--active {
@@ -233,6 +256,7 @@
 
     &__content {
         margin-bottom: 65px;
+        margin-bottom: 8vh;
         @include breakpoint(medium) {
             margin-bottom: 40px;
         }
@@ -251,8 +275,8 @@
         outline: none;
         border-radius: 12px;
         border: 1px solid $lightergray;
-        -webkit-box-shadow: 0px 18px 29px -29px rgba(0,0,0,0.75);
-                box-shadow: 0px 18px 29px -29px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 20px 25px -25px rgba(0,0,0,0.75);
+                box-shadow: 0px 20px 25px -25px rgba(0,0,0,0.75);
         -webkit-transition: -webkit-box-shadow .1s linear;
         transition: -webkit-box-shadow .1s linear;
         transition: box-shadow .1s linear;

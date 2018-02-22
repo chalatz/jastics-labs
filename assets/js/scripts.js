@@ -149,11 +149,6 @@ $(document).ready(function(){
 
     handle_page_nav();
 
-    $('#expertise').easytabs({
-        tabActiveClass: 'expertise__tag--active',
-        cycle: 10000
-    });
-
-    //expertise_tabs();
+    expertise_tabs();
 
 });
