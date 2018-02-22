@@ -255,6 +255,7 @@
 
     &__content {
         margin-bottom: 65px;
+        margin-bottom: 8vh;
         @include breakpoint(medium) {
             margin-bottom: 40px;
         }
