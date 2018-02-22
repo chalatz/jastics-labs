@@ -30,7 +30,8 @@
         text-transform: uppercase;
         -webkit-transition: color .1s linear;
                 transition: color .1s linear;
-        &:hover {
+        &:hover,
+        &--active {
             color: $lightblue;
         }
     }
@@ -44,7 +45,11 @@
     }
 
     &__content {
+        display: none;
         @include clearfix;
+        &--active {
+            display: block;
+        }
     }
 
     &__content-item {
