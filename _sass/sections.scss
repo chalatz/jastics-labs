@@ -2,6 +2,8 @@
 
     padding-top: 80px;
     padding-top: 8vh;
+    
+    padding-bottom: 8vh;
 
     &__header {
         margin: 47px 0 80px 0;
@@ -51,7 +53,6 @@
 .what-we-do {
 
     &__content {
-        margin-bottom: 20px;
         padding-bottom: 60px;
         padding-bottom: 8vh;
     }
@@ -65,7 +66,7 @@
         width: 33%;
         text-align: center;
         margin-bottom: 80px;
-        margin-bottom: 8vh;
+        margin-bottom: 6vh;
         padding: 0 12px;
 
         @include breakpoint(large) {
