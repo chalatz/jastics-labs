@@ -4,6 +4,9 @@
 
     &--banner {
         margin: 40px 0;
+        @include breakpoint(small) {
+            margin: 4vh 0;
+        }
     }
 
     &--white {
@@ -36,6 +39,9 @@
 
     @include breakpoint(medium) {
         bottom: 2vh;
+    }
+    @include breakpoint(small) {
+        bottom: 1vh;
     }
 
     &--section {

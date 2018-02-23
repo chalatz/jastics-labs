@@ -23,4 +23,8 @@
         margin-top: 6vh;
     }
 
+    @include breakpoint(small) {
+        margin-top: 4vh;
+    }
+
 }
