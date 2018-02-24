@@ -12,26 +12,37 @@ $(document).ready(function(){
 
     var clients_slider = function(){
 
-        $("#our-clients__content").lightSlider({
+        var the_clients_slider = $("#our-clients__content").lightSlider({
             onSliderLoad: function(){
                 $("#our-clients__content").removeClass('cS-hidden');
             },
             item: 4,
             controls: false,
-            // responsive: [
-            //     {
-            //         breakpoint: 768,
-            //         settings: {
-            //             item: 3
-            //         }
-            //     },
-            //     {
-            //         breakpoint: 460,
-            //         settings: {
-            //             item: 2
-            //         }
-            //     }
-            // ]
+            responsive: [
+                {
+                    breakpoint: 460,
+                    settings: {
+                        item: 1,
+                        slideMove: 1,
+                        controls: true,
+                        onAfterSlide: function(el){
+                            var active_slider = $('.our-clients__item.active');
+                            var client_id = active_slider.attr('data-client');
+
+                            $('.our-clients__item').removeClass('our-clients__item--active');
+                            $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
+
+                            active_slider.addClass('our-clients__item--active');
+                            $("#"+client_id).addClass('our-clients__feedback-item--active');
+                            console.log(client_id);
+                        }
+                    }
+                }
+            ]
+        });
+
+        $(window).on('resize', function(){
+            the_clients_slider.goToSlide(0);
         });
 
     };
@@ -59,7 +70,7 @@ $(document).ready(function(){
 
             if($this.hasClass('our-clients__item--has-feedback')){
 
-                var client_id = $this.attr('data-client')
+                var client_id = $this.attr('data-client');
 
                 $('.our-clients__item').removeClass('our-clients__item--active');
                 $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');

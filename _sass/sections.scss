@@ -201,6 +201,11 @@
         &--active {
             display: inherit;
         }
+
+        @include breakpoint(small) {
+            text-align: center;
+        }
+
     }
 
     &__item-img {
