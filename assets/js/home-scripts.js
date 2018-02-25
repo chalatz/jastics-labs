@@ -128,6 +128,25 @@ $(document).ready(function(){
 
     };
 
+    var goto_top = function(){
+
+        $(window).scroll(function(event){
+            var scroll = $(window).scrollTop();
+            if (scroll >= 50) {
+              $(".go-top").addClass("show");
+            } else {
+              $(".go-top").removeClass("show");
+            }
+          });
+  
+          $('#scrollBtn').click(function(){
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+          });
+
+    };
+
     scroll_to('banner-goto', 'what-we-do');
     scroll_to('what-we-do-goto', 'how-we-work');
     scroll_to('how-we-work-goto', 'our-clients');
@@ -138,5 +157,7 @@ $(document).ready(function(){
     init_arrow();
 
     clients_feedback();
+
+    goto_top();
 
 });
