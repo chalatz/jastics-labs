@@ -10,42 +10,36 @@ $(document).ready(function(){
         });
     };
 
-    var clients_slider = function(){
+    var show_clients_feedback = function(active_slider, client_id){
 
-        var the_clients_slider = $("#our-clients__content").lightSlider({
-            onSliderLoad: function(){
-                $("#our-clients__content").removeClass('cS-hidden');
-            },
-            item: 4,
-            controls: false,
-            responsive: [
-                {
-                    breakpoint: 460,
-                    settings: {
-                        item: 1,
-                        slideMove: 1,
-                        controls: true,
-                        onAfterSlide: function(el){
-                            var active_slider = $('.our-clients__item.active');
-                            var client_id = active_slider.attr('data-client');
+        $('.our-clients__item').removeClass('our-clients__item--active');
+        $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
 
-                            $('.our-clients__item').removeClass('our-clients__item--active');
-                            $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
-
-                            active_slider.addClass('our-clients__item--active');
-                            $("#"+client_id).addClass('our-clients__feedback-item--active');
-                            console.log(client_id);
-                        }
-                    }
-                }
-            ]
-        });
-
-        $(window).on('resize', function(){
-            the_clients_slider.goToSlide(0);
-        });
+        active_slider.addClass('our-clients__item--active');
+        $("#"+client_id).addClass('our-clients__feedback-item--active');
 
     };
+
+    var svg_icon = function(id, classes = ''){
+
+        var output = '';
+
+        output += '<svg class="'+ id;
+
+        if(classes.length > 0){
+            output += ' '+ classes;
+        }
+
+        output += '">';
+
+        output += '<use xlink:href="#'+ id +'" />';
+
+        output += '</svg>';
+
+        return output;
+
+
+    }
 
     var init_arrow = function(){
 
@@ -55,10 +49,52 @@ $(document).ready(function(){
             arrow_pos = first_client_left + first_client_width * .25,
             arrow_el = $('#our-clients__arrow');
 
-        arrow_el.css('left', arrow_pos + 'px');
+            if($(window).width() > 460) {
+                arrow_el.css('left', arrow_pos + 'px');
+            } else {
+                arrow_el.css('left', '25%');
+            }
+
+    };    
+
+    var clients_slider = function(){
+
+        var the_clients_slider = $("#our-clients__content").lightSlider({
+            onSliderLoad: function(){
+                $("#our-clients__content").removeClass('cS-hidden');
+            },
+            item: 4,
+            controls: false,
+            loop: false,
+            responsive: [
+                {
+                    breakpoint: 460,
+                    settings: {
+                        item: 1,
+                        slideMove: 1,
+                        controls: true,
+                        nextHtml: svg_icon('arrow-right', 'slider-arrow-icon'),
+                        prevHtml: svg_icon('arrow-left', 'slider-arrow-icon'),
+                        onAfterSlide: function(el){
+                            var active_slider = $('.our-clients__item.active');
+                            var client_id = active_slider.attr('data-client');
+
+                            if(active_slider.hasClass('our-clients__item--has-feedback')){
+                                show_clients_feedback(active_slider, client_id);
+                            }
+                        }
+                    }
+                }
+            ]
+        });
+
+        $(window).on('resize', function(){
+            the_clients_slider.refresh();
+            the_clients_slider.goToSlide(0);
+            init_arrow();
+        });
 
     };
-
 
     var clients_feedback = function(){
 
@@ -72,11 +108,7 @@ $(document).ready(function(){
 
                 var client_id = $this.attr('data-client');
 
-                $('.our-clients__item').removeClass('our-clients__item--active');
-                $('.our-clients__feedback-item').removeClass('our-clients__feedback-item--active');
-
-                $this.addClass('our-clients__item--active');
-                $("#"+client_id).addClass('our-clients__feedback-item--active');
+                show_clients_feedback($this, client_id);
 
                 var handle_arrow = function(el){
                     var el_left = el.position().left,

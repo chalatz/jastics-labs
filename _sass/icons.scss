@@ -186,3 +186,17 @@ svg.quotes-right {
     position: relative;
     top: 3px;
 }
+
+.lSAction>.lSPrev {
+    left: 0 !important;
+}
+
+.slider-arrow-icon {
+    fill: $lightgray;
+    width: 36px;
+    height: 36px;
+    display: none !important;
+    @include breakpoint(small) {
+        display: inline-block !important;
+    }
+}
