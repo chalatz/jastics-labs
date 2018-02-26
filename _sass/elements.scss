@@ -38,10 +38,10 @@
     }
 
     @include breakpoint(medium) {
-        bottom: 2vh;
+        bottom: 6px;
     }
     @include breakpoint(small) {
-        bottom: 1vh;
+        bottom: 0;
     }
 
     &--section {

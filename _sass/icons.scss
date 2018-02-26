@@ -60,6 +60,13 @@
 
 @include social_icons(1);
 
+@include breakpoint(medium) {
+    @include social_icons(.8);
+}
+@include breakpoint(small) {
+    @include social_icons(.7);
+}
+
 .social-icon {
 
     fill: #fff;
@@ -77,9 +84,11 @@
         }
 
         @include breakpoint(medium) {
-            display: block;
-            text-align: center;
-            margin: 16px 0 0 0;
+            margin-left: 16px;
+        }
+
+        @media (max-width: 500px) {
+            margin-left: 12px;
         }
 
     }
