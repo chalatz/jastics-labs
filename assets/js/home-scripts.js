@@ -52,7 +52,7 @@ $(document).ready(function(){
             if($(window).width() > 460) {
                 arrow_el.css('left', arrow_pos + 'px');
             } else {
-                arrow_el.css('left', '25%');
+                arrow_el.css('left', '50%');
             }
 
     };    
@@ -120,7 +120,9 @@ $(document).ready(function(){
                     },1000);
                 };
 
-                handle_arrow($this);
+                if($(window).width() > 460) {
+                    handle_arrow($this);
+                }
 
             }
 
@@ -165,16 +167,14 @@ $(document).ready(function(){
             }
         });
 
+        $("#our-clients__content").removeClass('hidden');
+
         $(window).on('resize', function(){
             $carousel.flickity('select', 0);
             init_arrow();
-        });
-
-        
+        });        
 
     };
-
-    the_slider();
 
     scroll_to('banner-goto', 'what-we-do');
     scroll_to('what-we-do-goto', 'how-we-work');
@@ -182,6 +182,8 @@ $(document).ready(function(){
     scroll_to('our-clients-goto', 'hire-us');    
     
     //clients_slider();
+
+    the_slider();
 
     init_arrow();
 

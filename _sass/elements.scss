@@ -154,7 +154,32 @@ button {
   }
 
 .flickity-prev-next-button {
+
     display: none;
+    background: transparent;
+
+    &:disabled {
+        display: none;
+    }
+
+    &.previous {
+        left: 0 !important;
+    }
+
+    .arrow {
+        fill: $lightgray;
+        -webkit-transition: fill .2s linear;
+                transition: fill .2s linear;
+        &:hover {
+            fill: $darkgray;
+        }
+    }
+
+    &:hover {
+        .arrow {
+            fill: $darkgray;
+        } 
+    }
 
     @include breakpoint(small) {
         display: block;

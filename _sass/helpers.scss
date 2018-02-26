@@ -9,6 +9,10 @@ img {
     overflow: hidden;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .fixed-menu {
     position: fixed !important;
     height: 100%;
