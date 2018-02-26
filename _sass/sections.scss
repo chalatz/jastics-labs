@@ -194,9 +194,16 @@
 
     &__content {
         list-style: none;
+        padding: 0;
     }
 
     &__item {
+
+        width: 25%;
+
+        @include breakpoint(small) {
+            width: 100%;
+        }
         
         &--active {
             display: inherit;

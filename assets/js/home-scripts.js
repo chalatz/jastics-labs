@@ -147,12 +147,41 @@ $(document).ready(function(){
 
     };
 
+    var the_slider = function(){
+
+        var $carousel = $('#our-clients__content').flickity({
+            cellAlign: 'left',
+            prevNextButtons: true,
+            pageDots: false,
+            contain: true
+        });
+
+        $carousel.on('settle.flickity', function() {
+            var active_slider = $('.our-clients__item.is-selected');
+            var client_id = active_slider.attr('data-client');
+
+            if(active_slider.hasClass('our-clients__item--has-feedback')){
+                show_clients_feedback(active_slider, client_id);
+            }
+        });
+
+        $(window).on('resize', function(){
+            $carousel.flickity('select', 0);
+            init_arrow();
+        });
+
+        
+
+    };
+
+    the_slider();
+
     scroll_to('banner-goto', 'what-we-do');
     scroll_to('what-we-do-goto', 'how-we-work');
     scroll_to('how-we-work-goto', 'our-clients');
     scroll_to('our-clients-goto', 'hire-us');    
     
-    clients_slider();
+    //clients_slider();
 
     init_arrow();
 
