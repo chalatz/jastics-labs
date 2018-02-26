@@ -19,10 +19,12 @@
 
     &__btn {
         margin-top: 45px;
-        @include breakpoint(small) {
+        text-align: left;
+
+        @include breakpoint(medium) {
             text-align: center;
             margin-top: 20px;
-            margin-bottom: 12px;;
+            margin-bottom: 12px;
         }
     }
 

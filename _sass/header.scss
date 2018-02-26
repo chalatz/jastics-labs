@@ -2,6 +2,11 @@
     position: fixed;
     width: 100%;
     background-color: #fff;
+
+    &--shadowed {
+        -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+                box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    }
 }
 
 .site-header {
@@ -59,14 +64,6 @@
 
         //padding: 25px 0 75px;
         padding: 16px 0;
-
-        @include breakpoint(medium) {
-            padding-bottom: 8vw;
-        }
-
-        @media (max-width: 500px) {
-            height: 110px;
-        }
 
         .site-header__logo {
 

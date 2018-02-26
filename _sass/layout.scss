@@ -28,6 +28,9 @@ body {
     width: $page_width;
     max-width: $max-width;
     margin: 0 auto 80px;
+    @include breakpoint(large) {
+        width: 90%;
+    }
     @include breakpoint(medium) {
         width: 95%;
     }
