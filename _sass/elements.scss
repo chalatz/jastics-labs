@@ -71,6 +71,10 @@
     background-color: $lightblue;
     z-index: 1;
 
+    &--page {
+        z-index: 0;
+    }
+
     @include breakpoint(medium) {
         width: 55vw;
     }

@@ -1,3 +1,9 @@
+.site-header-wrapper {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+
 .site-header {
 
     @include clearfix;
@@ -51,7 +57,8 @@
 
     &--page {
 
-        padding: 25px 0 75px;
+        //padding: 25px 0 75px;
+        padding: 16px 0;
 
         @include breakpoint(medium) {
             padding-bottom: 8vw;

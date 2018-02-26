@@ -1,31 +1,39 @@
-<header class="site-header site-header--page container menu-closed">
+<div class="site-header-wrapper">
 
-    <a id="site-header__logo" href="{{'/' | relative_url}}" class="site-header__logo">
-        <span class="site-header-logo__text">{{ site.title }}</span>
-    </a>
+    <header class="site-header site-header--page container menu-closed">
 
-    <div class="site-header__links site-header__links--page" id="header-links">
-        
-        <a href="{{ '/hire' | relative_url }}" class="hire-us-btn hire-us-btn--page" id="hire-us-btn--page">
-            <span class="hire-us-btn__text">
-                Hire Us
-            </span>
+        <a id="site-header__logo" href="{{'/' | relative_url}}" class="site-header__logo">
+            <span class="site-header-logo__text">{{ site.title }}</span>
         </a>
 
-        <nav class="site-nav site-nav--page">
+        <div class="site-header__links site-header__links--page" id="header-links">
+            
+            <a href="{{ '/hire' | relative_url }}" class="hire-us-btn hire-us-btn--page" id="hire-us-btn--page">
+                <span class="hire-us-btn__text">
+                    Hire Us
+                </span>
+            </a>
 
-            <div class="site-nav__icon site-nav__icon--page site-nav__icon--open-menu" id="open-menu--page">
-                {% include svg/icon.html id='open-menu-icon' %}
-            </div>
+            <nav class="site-nav site-nav--page">
 
-            <div class="site-nav__icon site-nav__icon--close-menu" id="close-menu--page">
-                {% include svg/icon.html id='close-menu-icon' %}
-            </div>
-        
-        </nav>
+                <div class="site-nav__icon site-nav__icon--page site-nav__icon--open-menu" id="open-menu--page">
+                    {% include svg/icon.html id='open-menu-icon' %}
+                </div>
 
-        {% include nav.html modifier='page' %}
+                <div class="site-nav__icon site-nav__icon--close-menu" id="close-menu--page">
+                    {% include svg/icon.html id='close-menu-icon' %}
+                </div>
+            
+            </nav>
 
-    </div> 
+            {% include nav.html modifier='page' %}
 
-</header>
+        </div>
+
+        <div class="nav-wrapper nav-wrapper--page" id="nav-wrapper"></div>
+
+    </header>
+
+    
+
+</div>

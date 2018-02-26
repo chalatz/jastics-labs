@@ -60,6 +60,10 @@
             padding-right: 4vw;
         }
 
+        video::-webkit-media-controls {
+            z-index: -1 !important;
+        }
+
         @include breakpoint(medium) {
             float: none;
             display: block;
