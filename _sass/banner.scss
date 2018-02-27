@@ -1,6 +1,6 @@
 .banner {
     background-color: #494949;
-    background-image: url(/assets/images/site/banner-bg.png);
+    background-image: url(/jastics-labs/assets/images/site/banner-bg.png);
     min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,14 +8,18 @@
     position: relative;
 
     @include breakpoint(large) {
-        background-image: url(/assets/images/site/banner-bg-large.png);
+        background-image: url(/jastics-labs/assets/images/site/banner-bg-large.png);
     }
     @include breakpoint(medium) {
-        background-image: url(/assets/images/site/banner-bg-medium.png);
+        background-image: url(/jastics-labs/assets/images/site/banner-bg-medium.png);
     }
     @include breakpoint(small) {
+<<<<<<< HEAD
         background-image: url(/assets/images/site/banner-bg-small.png);
         margin-bottom: 8vw;
+=======
+        background-image: url(/jastics-labs/assets/images/site/banner-bg-small.png);
+>>>>>>> 36b3e1d45938d0b4c4899cebd85a3990e6be63db
     }
 
     &__container {

@@ -1,32 +1,32 @@
 @font-face {
     font-family: "Gotham Pro Regular";
-    src: url("/assets/fonts/GothamPro-regular.woff") format("woff"),
-        url("/assets/fonts/GothamPro-regular.ttf") format("truetype");
+    src: url("/jastics-labs/assets/fonts/GothamPro-regular.woff") format("woff"),
+        url("/jastics-labs/assets/fonts/GothamPro-regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Gotham Pro Bold";
-    src: url("/assets/fonts/GothamPro-Bold.woff") format("woff"),
-        url("/assets/fonts/GothamPro-Bold.ttf") format("truetype");
+    src: url("/jastics-labs/assets/fonts/GothamPro-Bold.woff") format("woff"),
+        url("/jastics-labs/assets/fonts/GothamPro-Bold.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+    src: url("/jastics-labs/assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+    src: url("/jastics-labs/assets/fonts/Montserrat-Medium.ttf") format("truetype");
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+    src: url("/jastics-labs/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Blissful Thinking";
-    src: url("/assets/fonts/BlissfulThinking.otf") format("opentype");
+    src: url("/jastics-labs/assets/fonts/BlissfulThinking.otf") format("opentype");
 }
 
 @mixin breakpoint($point) {
