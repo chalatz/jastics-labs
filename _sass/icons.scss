@@ -103,8 +103,9 @@
     }
 
     &--footer-upwork {
-        position: relative;
-        bottom: -6px;
+        display: inline-block;
+        vertical-align: bottom;
+        line-height: 0;
     }
 
 }
@@ -192,12 +193,6 @@ svg.quotes-right {
     width: 35px;
     height: 20px;
     fill: #fff;
-    position: relative;
-    top: 3px;
-}
-
-.lSAction>.lSPrev {
-    left: 0 !important;
 }
 
 .slider-arrow-icon {
