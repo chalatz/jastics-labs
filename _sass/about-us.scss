@@ -1,7 +1,7 @@
 .about-us {
 
     &__item {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         @include breakpoint(medium) {
             margin-bottom: 8vw;
         }

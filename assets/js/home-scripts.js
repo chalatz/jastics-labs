@@ -52,7 +52,7 @@ $(document).ready(function(){
             if($(window).width() > 460) {
                 arrow_el.css('left', arrow_pos + 'px');
             } else {
-                arrow_el.css('left', '50%');
+                arrow_el.css('left', '40%');
             }
 
     };    

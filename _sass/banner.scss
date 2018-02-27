@@ -35,6 +35,10 @@
             width: 75%;
         }
 
+        @include breakpoint(small) {
+            font-size: 22px;
+        }
+
     }
 
     &__socials-wrapper {
