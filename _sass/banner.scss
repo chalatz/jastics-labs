@@ -14,12 +14,7 @@
         background-image: url(/jastics-labs/assets/images/site/banner-bg-medium.png);
     }
     @include breakpoint(small) {
-<<<<<<< HEAD
-        background-image: url(/assets/images/site/banner-bg-small.png);
-        margin-bottom: 8vw;
-=======
         background-image: url(/jastics-labs/assets/images/site/banner-bg-small.png);
->>>>>>> 36b3e1d45938d0b4c4899cebd85a3990e6be63db
     }
 
     &__container {
