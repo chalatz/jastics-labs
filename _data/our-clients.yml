@@ -8,9 +8,11 @@ items:
 
   - name: Foodrazor
     image: foodrazor.png
+    feedback: Very professional, very effective. Thank you!
 
   - name: Upwork
     image: upwork.png
+    feedback: Jastics Labs delivered a high quality product.
 
   - name: Pick Me
     image: pick-me.png
