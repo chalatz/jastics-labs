@@ -15,6 +15,10 @@
         width: 100%;
         z-index: 1;
 
+        @include breakpoint(small) {
+            padding-top: 66px;
+        }
+
         &--page {
             z-index: 2 ;
             @media (max-width: 500px) {
