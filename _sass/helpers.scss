@@ -20,4 +20,7 @@ img {
 
 .jumbotron {
     padding-top: 125px;
+    @include breakpoint(small) {
+        padding-top: 116px;
+    }
 }
