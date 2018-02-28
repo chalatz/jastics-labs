@@ -26,8 +26,6 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    width: 46px;
-    height: 46px;
     z-index: 99;
     -webkit-transition: stroke .2s linear;
     transition: stroke .2s linear;
@@ -39,9 +37,6 @@
 
     @include breakpoint(medium) {
         bottom: 6px;
-    }
-    @include breakpoint(small) {
-        bottom: 0;
     }
 
     &--section {
