@@ -6,6 +6,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    // display: table;
+    // height: 100%;
+    // width: 100%;
+    // vertical-align: middle;
+    min-height: 100%;
 
     @include breakpoint(large) {
         background-image: url(/jastics-labs/assets/images/site/banner-bg-large.jpg);
